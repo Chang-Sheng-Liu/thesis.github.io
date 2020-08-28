@@ -1,0 +1,7 @@
+digraph "UE_PHY_ul_power_control_config_dedicated_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_PHY_ul_power_control\l_config_dedicated_t\n|+ p0_UE_PUSCH\l+ deltaMCS_Enabled\l+ accumulationEnabled\l+ p0_UE_PUCCH\l+ pSRS_Offset\l+ filterCoefficient\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

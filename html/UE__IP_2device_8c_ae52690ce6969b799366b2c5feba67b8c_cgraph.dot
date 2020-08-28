@@ -1,0 +1,12 @@
+digraph "init_module"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="init_module",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ue_ip_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UE__IP_2device_8c.html#aaa6d865a9f570c94020d9034d8f0beb8",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ue_ip_netlink_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga6dc4443743ad477cb0c9e2330553e227",tooltip=" "];
+}

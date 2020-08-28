@@ -1,0 +1,7 @@
+digraph "sctp_new_association_resp_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{sctp_new_association\l_resp_s\n|+ ulp_cnx_id\l+ assoc_id\l+ out_streams\l+ in_streams\l+ sctp_state\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

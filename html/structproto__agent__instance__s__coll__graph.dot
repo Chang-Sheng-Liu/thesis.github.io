@@ -1,0 +1,11 @@
+digraph "proto_agent_instance_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{proto_agent_instance_s\n|+ mod_id\l+ recv_thread\l+ exit\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +channel" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +agent_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{proto_agent_info_t\n|+ total_rx_msg\l+ total_tx_msg\l+ rx_msg\l+ tx_msg\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structproto__agent__info__t.html",tooltip=" "];
+}

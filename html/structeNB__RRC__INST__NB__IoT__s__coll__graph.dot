@@ -1,0 +1,20 @@
+digraph "eNB_RRC_INST_NB_IoT_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{eNB_RRC_INST_NB_IoT_s\n|+ Nb_ue\l+ mcc\l+ mnc\l+ mnc_digit_length\l+ srb1_timer_poll_retransmit\l+ srb1_max_retx_threshold\l+ srb1_timer_reordering\l+ srb1_timer_status_prohibit\l+ srs_enable\l|+ RB_HEAD()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +carrier" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{rrc_eNB_carrier_data\l_NB_IoT_t\n|+ MIB_NB_IoT\l+ sizeof_MIB_NB_IoT\l+ SIB1_NB_IoT\l+ sizeof_SIB1_NB_IoT\l+ SIB23_NB_IoT\l+ sizeof_SIB23_NB_IoT\l+ SIB4_NB_IoT\l+ sizeof_SIB4_NB_IoT\l+ SIB5_NB_IoT\l+ sizeof_SIB5_NB_IoT\land 23 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrrc__eNB__carrier__data__NB__IoT__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +MCCH_MESS\n+SI\n+Srb0" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +configuration\n+uid_allocator" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +initial_id2_s1ap_ids\n+s1ap_id2_s1ap_ids" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{hash_table\n|+ key_len\l+ key_count\l+ ratio\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structhash__table.html",tooltip="identifies the hashtable for which operations are to be performed"];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +data_store" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{container\n|+ flag\l+ gid\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structcontainer.html",tooltip=" "];
+  Node3 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +next_c" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +end\n+next" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{parsed_data\n|+ vid\l+ gid\l+ type\l+ time\l+ x_pos\l+ y_pos\l+ speed\l+ visit\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structparsed__data.html",tooltip=" "];
+  Node3 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

@@ -1,0 +1,9 @@
+digraph "classifier_entity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{classifier_entity\n|+ classref\l+ version\l+ ipv4\l+ saddr\l+ splen\l+ mpls_label\l+ daddr\l+ dplen\l+ protocol\l+ protocol_message_type\l+ sport\l+ dport\l+ rab_id\l+ rab_id_rx\l+ fct\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ipv6\n+next\n+rb\n+rb_rx" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

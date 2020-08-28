@@ -1,0 +1,7 @@
+digraph "RRC_XFACE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RRC_XFACE\n|+ Frame_index\l+ UE_index\l+ eNB_id\l+ UE_id\l+ openair_rrc_top_init\l+ openair_rrc_eNB_init\l+ openair_rrc_UE_init\l+ rrc_rx_tx\l+ mac_rrc_data_ind\l+ mac_rrc_data_req\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

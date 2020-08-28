@@ -1,0 +1,7 @@
+digraph "osa_snow_3g_context_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{osa_snow_3g_context_s\n|+ LFSR_S0\l+ LFSR_S1\l+ LFSR_S2\l+ LFSR_S3\l+ LFSR_S4\l+ LFSR_S5\l+ LFSR_S6\l+ LFSR_S7\l+ LFSR_S8\l+ LFSR_S9\land 9 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

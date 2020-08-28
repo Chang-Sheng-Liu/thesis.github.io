@@ -1,0 +1,7 @@
+digraph "mac_NPRACH_ConfigSIB_NB_IoT"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mac_NPRACH_ConfigSIB\l_NB_IoT\n|+ mac_nprach_Periodicity\l_NB_IoT\l+ mac_nprach_StartTime\l_NB_IoT\l+ mac_nprach_SubcarrierOffset\l_NB_IoT\l+ mac_nprach_NumSubcarriers\l_NB_IoT\l+ mac_nprach_SubcarrierMSG3\l_RangeStart_NB_IoT\l+ mac_maxNumPreambleAttempt\lCE_NB_IoT\l+ mac_numRepetitionsPerPreamble\lAttempt_NB_IoT\l+ mac_npdcch_NumRepetitions\l_RA_NB_IoT\l+ mac_npdcch_StartSF\l_CSS_RA_NB_IoT\l+ mac_npdcch_Offset_RA\l_NB_IoT\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

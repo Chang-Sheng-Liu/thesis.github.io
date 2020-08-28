@@ -1,0 +1,32 @@
+digraph "rlc_um_try_reassembly"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_um_try_reassembly",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Try reassembly PDUs from DAR buffer, starting at sequence number snP."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_um_clear_rx_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa3611e9a18ebc6e46dc0230461e20e08",tooltip="Erase the SDU in construction."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rlc_um_read_length\l_indicators",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga3bc56d30ca057ccdd824a866fac6360b",tooltip="Reset protocol variables and state variables to initial values."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rlc_um_reassembly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa3cddd6366192d86bec3da4fc3afe798",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="get_free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aa6649c5f31ce28f70a1a7352eb41de46",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="display_mem_load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aad2e600dac4df19ae63b1efe29405f59",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rlc_util_print_hex\l_octets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga9080083e27a8fc3d61451b6d4d7c8f3b",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rlc_um_send_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gadf3069c553c0fff2ec969a785cf52c40",tooltip="Send SDU if any reassemblied to upper layer."];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="rlc_data_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gabba9d9796c03b8f01c944be71725feff",tooltip="Interface with higher layers, route SDUs coming from RLC protocol instances to upper layer instance."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="get_pdcp_data_ind_func",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#ga2e06db776bf03678ebd05189a1635ee3",tooltip=" "];
+  Node10 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="rlc_um_v9_3_0_test\l_data_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__um__test_8c.html#a902bc4e0cf804ef3f84ad63b15abd40f",tooltip=" "];
+  Node9 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

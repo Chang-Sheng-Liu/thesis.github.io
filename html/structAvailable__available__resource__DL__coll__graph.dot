@@ -1,0 +1,11 @@
+digraph "Available_available_resource_DL"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Available_available\l_resource_DL\n|+ sixtone_end_subframe\l+ threetone_end_subframe\l+ singletone1_end_subframe\l+ singletone2_end_subframe\l+ singletone3_end_subframe\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +singletone1_Head\n+singletone2_Head\n+singletone3_Head\n+sixtone_Head\n+threetone_Head" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{available_resource_UL_s\n|+ start_subframe\l+ end_subframe\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structavailable__resource__UL__s.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +next\n+prev" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

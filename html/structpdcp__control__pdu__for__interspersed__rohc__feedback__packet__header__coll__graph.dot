@@ -1,0 +1,7 @@
+digraph "pdcp_control_pdu_for_interspersed_rohc_feedback_packet_header"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pdcp_control_pdu_for\l_interspersed_rohc_feedback\l_packet_header\n|+ dc\l+ pdu_type\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

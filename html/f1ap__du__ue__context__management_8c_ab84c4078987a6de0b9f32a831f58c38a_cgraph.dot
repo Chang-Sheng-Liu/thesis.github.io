@@ -1,0 +1,41 @@
+digraph "DU_handle_UE_CONTEXT_RELEASE_COMMAND"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DU_handle_UE_CONTEXT\l_RELEASE_COMMAND",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DU_send_UE_CONTEXT\l_RELEASE_COMPLETE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__ue__context__management_8c.html#ad1c0cbf0cd9d67aae4c8efdc89cdfee4",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="du_f1ap_itti_send_sctp\l_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__itti__messaging_8c.html#aefac93d9d3cf31f8e5b39050a4ecc3a2",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="f1ap_encode_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__encoder_8c.html#aeb101e0107e90201d0a11b82b3fab4b9",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2common_8c.html#a587e0ad0d0cc2677421231a08c3a614b",tooltip="Helper function to return the length of a string."];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="f1ap_get_cu_ue_f1ap_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a75bccc26261d06ddfc1a754245fcb759",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="f1ap_get_du_ue_f1ap_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a72ad50876a00a31877be538133b7754c",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="f1ap_remove_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a0356ec750dfc6e7fae956cff68a7ca0a",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="f1ap_get_rnti_by_cu_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#afc81568ec04cfc885d98e46647f8ffef",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="f1ap_get_rnti_by_du_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#aedacedde0b5177f06329aab96cd7b6c9",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="get_free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aa6649c5f31ce28f70a1a7352eb41de46",tooltip=" "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="display_mem_load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aad2e600dac4df19ae63b1efe29405f59",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="mac_eNB_rrc_ul_failure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#gaa98913d60281318aec3c03ffe2c5e910",tooltip=" "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="flexran_agent_get_rrc\l_xface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__rrc_8c.html#a81a4b61b62cbd82933fc5e20aed9bd08",tooltip=" "];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rrc_eNB_get_ue_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a746860031d13c8ab30390dc0e7685e9f",tooltip=" "];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa115188b3d5ddaf1cc58461532fa7123",tooltip=" "];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "rlc_um_data_req"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rlc_um_data_req",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa115188b3d5ddaf1cc58461532fa7123",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_um_test_send_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__um__very__simple__test_8h.html#af401d16a6c5b6755fe4aae2cd1e38c0a",tooltip=" "];
+}

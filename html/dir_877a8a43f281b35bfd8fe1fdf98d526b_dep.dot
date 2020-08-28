@@ -1,0 +1,12 @@
+digraph "X2AP" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_877a8a43f281b35bfd8fe1fdf98d526b {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_877a8a43f281b35bfd8fe1fdf98d526b.html"];
+    dir_877a8a43f281b35bfd8fe1fdf98d526b [shape=plaintext label="X2AP"];
+    dir_d227cb7ab494d318930bb7c7874c0327 [shape=box label="MESSAGES" color="red" fillcolor="white" style="filled" URL="dir_d227cb7ab494d318930bb7c7874c0327.html"];
+  }
+  dir_7df49ef0c5f0d4b2a785a319ccac4397 [shape=box label="COMMON" URL="dir_7df49ef0c5f0d4b2a785a319ccac4397.html"];
+  dir_877a8a43f281b35bfd8fe1fdf98d526b->dir_7df49ef0c5f0d4b2a785a319ccac4397 [headlabel="2", labeldistance=1.5 headhref="dir_000015_000000.html"];
+}

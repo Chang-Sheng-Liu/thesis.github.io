@@ -1,0 +1,15 @@
+digraph "rlc_um_entity_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_um_entity_s\n|+ initialized\l+ is_uplink_downlink\l+ protocol_state\l+ is_data_plane\l+ is_mxch\l+ vt_us\l+ vr_ur\l+ vr_ux\l+ vr_uh\l+ tx_sn_length\land 35 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure containing a RLC UM instance protocol variables, statistic variables, allocation variables,..."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +input_sdus\n+pdus_from_mac_layer\n+pdus_to_mac_layer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{list_t\n|+ nb_elements\l+ name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +t_reordering" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +dar_buffer\n+output_sdu_in_construction" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{mem_block_t\n|+ size\l+ pool_id\l+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmem__block__t.html",tooltip=" "];
+  Node3 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +next\n+previous" ,arrowhead="odiamond",fontname="Helvetica"];
+}

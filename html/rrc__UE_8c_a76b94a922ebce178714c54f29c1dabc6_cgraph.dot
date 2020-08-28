@@ -1,0 +1,28 @@
+digraph "dump_sib2"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dump_sib2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SIB2defaultPagingCycle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a4afa93d1bb5c4b6472d6ee8cfeaea3f4",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SIB2mac_ContentionResolution\lTimer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a426767d91b9d8a568038ca38b1249574",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SIB2modificationPeriodCoeff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a645e2ae19152017d170ccb04f28a9eb2",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SIB2nB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#ac9e9a90cda4e898e770831a906c8af50",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SIB2numberOfRA_Preambles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a60d496a22306a66c42ee73304b8771db",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SIB2powerRampingStep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#ae5749c4c01a303c210472ae43f9586eb",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SIB2preambleInitialReceived\lTargetPower",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a7795ee89b7a4a8a35bb2ca0dcf4ffd3e",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SIB2preambleTransMax",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a98fa2c2c1da3db571c37210e03d9a528",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="SIB2ra_ResponseWindowSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#ad9ff0ecfa2820c244953458955dd4563",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="SIB2SoundingPresent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#ac08b7f2745641ea4daec7fb6caaec375",tooltip=" "];
+}

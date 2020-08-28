@@ -1,0 +1,7 @@
+digraph "rlc_am_tx_data_pdu_management_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_am_tx_data_pdu\l_management_t\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure containing PDU variables related to its acknowlegment, non acknowlegment,..."];
+}

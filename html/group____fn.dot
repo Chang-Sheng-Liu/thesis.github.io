@@ -1,0 +1,29 @@
+digraph "Functions in OCG"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node8 [label="Generate report",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____generate__report.html",tooltip="Generate a report to show the states of OCG modules."];
+  Node5 [label="Config Mobigen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____config__mobi.html",tooltip="Generate configuration XML for mobigen."];
+  Node2 [label="OAI protocol config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____OSD__basic.html",tooltip="OAI Emulation struct for protocol configuration."];
+  Node6 [label="Create Dir",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____create__dir.html",tooltip="Create directory in OUTPUT_DIR for current emulation."];
+  Node4 [label="Call Emu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____call__emu.html",tooltip="Call the emulator."];
+  Node3 [label="LOG GEN Commands",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____log__gen.html",tooltip="using the following macro instead of \"printf\""];
+  Node11 [label="Parse XML",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____parse__XML.html",tooltip="Parse the XML configuration file."];
+  Node7 [label="Detect File",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____detect__file.html",tooltip="Detect new XML configuration file in USER_XML_FOLDER."];
+  Node12 [label="Save XML",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____save__XML.html",tooltip="Save the XML configuration file in dst_dir."];
+  Node10 [label="Parse Filename",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____parse__filename.html",tooltip="Parse the filename to get user_name and file_date."];
+  Node1 [label="Functions in OCG",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="describing all the functions used by OCG"];
+  Node9 [label="Get Opt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____get__opt.html",tooltip="Get options of the OCG command, e.g. \"OCG -f\" and \"OCG -h\"."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node6 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node7 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node8 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node9 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node10 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node11 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node12 [shape=plaintext, dir="back", style="solid"];
+}

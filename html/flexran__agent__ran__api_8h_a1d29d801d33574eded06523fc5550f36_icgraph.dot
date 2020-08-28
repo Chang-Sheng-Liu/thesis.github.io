@@ -1,0 +1,24 @@
+digraph "flexran_get_rrc_rnti_list"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="flexran_get_rrc_rnti_list",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_handle\l_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__handler_8c.html#a43c9a5dc096691280f076b3867c03464",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_agent_rrc_gtp\l_stats_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__rrc_8h.html#a3aa4cc8cb058b557b505a8ff7fc4b2fa",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_agent_stats\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__handler_8c.html#a5d243d6bde0840630abc819d19bd4778",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="flexran_agent_rrc_reconfiguration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__common_8h.html#ab7a808754bc968491f8ae0939d315baf",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="flexran_agent_rrc_stats\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__rrc_8h.html#a80744215661d08692b273af7c820b223",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="flexran_agent_rrc_trigger\l_handover",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__common_8h.html#a1d22da4370e713d9ca3f5764d714aa4b",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="flexran_agent_ue_config\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__common_8h.html#a69f9808c39942a8eb1079fc899f0b521",tooltip=" "];
+}

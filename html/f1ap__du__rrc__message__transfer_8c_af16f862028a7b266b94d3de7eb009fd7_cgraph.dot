@@ -1,0 +1,20 @@
+digraph "DU_send_INITIAL_UL_RRC_MESSAGE_TRANSFER"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DU_send_INITIAL_UL\l_RRC_MESSAGE_TRANSFER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="du_f1ap_itti_send_sctp\l_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__itti__messaging_8c.html#aefac93d9d3cf31f8e5b39050a4ecc3a2",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="f1ap_add_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a9191a13911f7bca2beb79cf41826ab9e",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="f1ap_encode_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__encoder_8c.html#aeb101e0107e90201d0a11b82b3fab4b9",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2common_8c.html#a587e0ad0d0cc2677421231a08c3a614b",tooltip="Helper function to return the length of a string."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rrc_eNB_allocate_new\l_UE_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#ae50fcc550622acf95507d021e64866c0",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="uid_linear_allocator_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a3da088e4354b184de804b3d1bc7fe94b",tooltip=" "];
+}

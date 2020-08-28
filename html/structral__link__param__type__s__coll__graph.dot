@@ -1,0 +1,7 @@
+digraph "ral_link_param_type_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ral_link_param_type_s\n|+ choice\l+ link_param_gen\l+ link_param_qos\l+ link_param_lte\l+ _union\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

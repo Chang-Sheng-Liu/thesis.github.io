@@ -1,0 +1,17 @@
+digraph "MACPHY_DATA_REQ_TABLE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MACPHY_DATA_REQ_TABLE\n|+ Macphy_req_cnt\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +Macphy_req_table_entry" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Macphy_data_req_table\l_entry\n|+ Active\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMacphy__data__req__table__entry.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +Macphy_data_req" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{MACPHY_DATA_REQ\n|+ Direction\l+ Pdu_type\l+ Phy_resources\l+ format_flag\l+ Dir\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMACPHY__DATA__REQ.html",tooltip="MACPHY-DATA-REQ primitive is used to transfer a new PDU to PHY corresponding to a particular transpor..."];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +Req_rx" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{MACPHY_DATA_REQ_RX\n|+ crc_status\l+ num_tb\l+ tb_size_bytes\l+ Active_process_map\l+ Chbch_pdu\l+ DL_sach_pdu\l+ UL_sach_pdu\l+ Rach_pdu\l+ Mrbch_pdu\l+ Pdu\l+ DL_meas\l+ UL_meas\l+ Meas\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMACPHY__DATA__REQ__RX.html",tooltip="MACPHY-DATA-REQ_RX structure is used to request transfer a new PDU from PHY corresponding to a partic..."];
+  Node5 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +Lchan_id" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{LCHAN_ID\n||+ __attribute__()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLCHAN__ID.html",tooltip="Logical Channel ID structure."];
+  Node6 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +Req_tx" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{MACPHY_DATA_REQ_TX\n|+ num_tb\l+ tb_size_bytes\l+ Active_process_map\l+ New_process_map\l+ Chbch_pdu\l+ DL_sach_pdu\l+ UL_sach_pdu\l+ Rach_pdu\l+ Mrbch_pdu\l+ Pdu\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structMACPHY__DATA__REQ__TX.html",tooltip="MACPHY-DATA-REQ_TX structure is used to transfer a new PDU to PHY corresponding to a particular trans..."];
+}

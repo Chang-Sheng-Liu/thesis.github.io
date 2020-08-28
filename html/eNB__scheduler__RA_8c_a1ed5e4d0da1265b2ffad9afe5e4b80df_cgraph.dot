@@ -1,0 +1,30 @@
+digraph "check_Msg4_retransmission"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="check_Msg4_retransmission",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="cancel_ra_proc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga0c5b911b38eadc4fa965f561d6cafc94",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CCE_allocation_infeasible",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga08091f59e46cc6cbe9eac747d19517e6",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="fill_nfapi_dl_dci_1A",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga69c2cc07907d213c586bbb28f87fca29",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="fill_nfapi_dlsch_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga0181d51dde94037bdb601297d4e68480",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fill_nfapi_uci_acknak",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga42beff62f26350df78ae0d1cde85404e",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="find_UE_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga35a30760cd6df3d2fcadef04c55d66ea",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="get_retransmission\l_timing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__primitives_8c.html#a7a6e9a2dc84f3471db025802630fba23",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="getRIV",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gae65b248bf8977191ccf415abdb95dcb5",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="set_dl_ue_select_msg4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#af4b4cecd1ff71a1f9228a39004f66625",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="UE_PCCID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga63d612e6b94450ff40406b999ab25448",tooltip=" "];
+}

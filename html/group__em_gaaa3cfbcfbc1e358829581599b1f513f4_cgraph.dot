@@ -1,0 +1,10 @@
+digraph "rlc_am_get_control_pdu_infos"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_am_get_control\l_pdu_infos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Retrieve control PDU informations from a serialized control PDU."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_am_read_bit_field",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaf16d8d10a854a6edcea00020d48e1188",tooltip="Read N bits in a byte area seen as a bit-field with the help of a byte index and a modulo 8 bit index..."];
+}

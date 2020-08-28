@@ -1,0 +1,15 @@
+digraph "UE_MAC_ul_config_request_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_MAC_ul_config_request_t\n|+ sfn_sf\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_ul_config_request_body" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{UE_MAC_ul_config_request\l_body_t\n|+ tl\l+ length_list\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__MAC__ul__config__request__body__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +ue_ul_config_list" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UE_MAC_ul_config_request_list\n|+ @1\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__MAC__ul__config__request__list.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +ue_SR_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{UE_MAC_ul_config_SR\n|+ eNB_id\l+ SR_payload\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__MAC__ul__config__SR.html",tooltip=" "];
+  Node5 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +ue_rach_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{UE_MAC_ul_config_rach\n|+ eNB_indexP\l+ ra_RACH_MaskIndex\l+ ra_PREAMBLE_RECEIVED\l_TARGET_POWER\l+ ra_TDD_map_index\l+ ra_RNTI\l+ Msg3\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__MAC__ul__config__rach.html",tooltip=" "];
+}

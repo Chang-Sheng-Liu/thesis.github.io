@@ -1,0 +1,7 @@
+digraph "Sched_Rsp_NB_IoT_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Sched_Rsp_NB_IoT_t\n|+ module_id\l+ CC_id\l+ hypersfn\l+ frame\l+ subframe\l+ DL_req\l+ UL_req\l+ HI_DCI0_req\l+ TX_req\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

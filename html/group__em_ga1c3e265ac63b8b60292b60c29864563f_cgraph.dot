@@ -1,0 +1,35 @@
+digraph "rlc_am_rx_list_check_duplicate_insert_pdu"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_am_rx_list_check\l_duplicate_insert_pdu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Insert a PDU in the RX buffer after removing byte duplicate (implemented with a list)."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="list2_add_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8h.html#a7814270bce9d67ff1a9d652d60f20a79",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_am_rx_list_handle_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__am__rx__list_8c.html#acf6eacde4a1ad65e6183d3f7155f975c",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="create_new_segment\l_from_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__am__rx__list_8c.html#a35f86de17d64d420f9b641d036ed7d11",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aa6649c5f31ce28f70a1a7352eb41de46",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="display_mem_load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aad2e600dac4df19ae63b1efe29405f59",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="header_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__tx_8c.html#a62fb837e396ca38cf696cd5e2094021c",tooltip=" "];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="list2_insert_after\l_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa0f2daae911538bc2304c9be3ebab99b",tooltip="Insert a PDU embedded in a mem_block_t in a list at a position after a designated element of the list..."];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="list2_insert_before\l_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gadde853f44e222a33bd9553be361634d2",tooltip="Insert a PDU embedded in a mem_block_t in a list at a position before a designated element of the lis..."];
+  Node3 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="list2_remove_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8h.html#ab86b3cc848f795a413f6d6757e737823",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="rlc_am_rx_list_handle\l_pdu_segment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__am__rx__list_8c.html#a136422beb5be2e3255e9b9786222d9a5",tooltip=" "];
+  Node12 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

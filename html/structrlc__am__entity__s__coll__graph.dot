@@ -1,0 +1,22 @@
+digraph "rlc_am_entity_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_am_entity_s\n|+ rb_id\l+ channel_id\l+ is_data_plane\l+ sdu_buffer_occupancy\l+ status_buffer_occupancy\l+ lock_input_sdus\l+ nb_sdu\l+ nb_sdu_no_segmented\l+ next_sdu_index\l+ current_sdu_index\land 53 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +receiver_buffer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{list2_t\n|+ nb_elements\l+ name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist2__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +control_pdu_list\n+pdus_to_mac_layer\n+segmentation_pdu_list" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{list_t\n|+ nb_elements\l+ name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist__t.html",tooltip=" "];
+  Node3 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +control_pdu_info\n+t_poll_retransmit\n+t_reordering\n+t_status_prohibit" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +tx_data_pdu_buffer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{rlc_am_tx_data_pdu\l_management_t\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrlc__am__tx__data__pdu__management__t.html",tooltip="Structure containing PDU variables related to its acknowlegment, non acknowlegment,..."];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +output_sdu_in_construction" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{mem_block_t\n|+ size\l+ pool_id\l+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmem__block__t.html",tooltip=" "];
+  Node3 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +next\n+previous" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +input_sdus" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{rlc_am_tx_sdu_management_t\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrlc__am__tx__sdu__management__t.html",tooltip="Structure containing SDU variables related to its segmentation and transmission."];
+}

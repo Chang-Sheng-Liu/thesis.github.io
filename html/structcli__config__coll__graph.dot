@@ -1,0 +1,7 @@
+digraph "cli_config"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{cli_config\n|+ port\l+ sfd\l+ cfd\l+ enabled\l+ debugfd\l+ debug_paused\l+ promptchar\l+ prompt\l+ exit\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

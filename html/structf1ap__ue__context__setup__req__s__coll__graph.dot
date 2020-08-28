@@ -1,0 +1,14 @@
+digraph "f1ap_ue_context_setup_req_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{f1ap_ue_context_setup\l_req_s\n|+ gNB_CU_ue_id\l+ gNB_DU_ue_id\l+ rnti\l+ mcc\l+ mnc\l+ mnc_digit_length\l+ nr_cellid\l+ servCellIndex\l+ cellULConfigured\l+ servCellId\l+ cu_to_du_rrc_information\l+ cu_to_du_rrc_information\l_length\l+ drbs_to_be_setup_length\l+ rrc_container\l+ rrc_container_length\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +drbs_to_be_setup" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{f1ap_drb_to_be_setup_s\n|+ drb_id\l+ up_ul_tnl_length\l+ rlc_mode\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structf1ap__drb__to__be__setup__s.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +up_ul_tnl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +s1ap_initial_context\l_setup_req" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{s1ap_initial_context\l_setup_req_s\n|+ ue_initial_id\l+ eNB_ue_s1ap_id\l+ mme_ue_s1ap_id\l+ security_key\l+ nb_of_e_rabs\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structs1ap__initial__context__setup__req__s.html",tooltip=" "];
+  Node3 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +e_rab_param\n+security_capabilities\n+ue_ambr" ,arrowhead="odiamond",fontname="Helvetica"];
+}

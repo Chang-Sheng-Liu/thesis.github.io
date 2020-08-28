@@ -1,0 +1,7 @@
+digraph "rlc_tm_parameters"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_tm_parameters\n|+ frame_tick_milliseconds\l+ rb_id\l+ e_r\l+ sdu_discard_mode\l+ segmentation_indication\l+ delivery_of_erroneous_sdu\l+ timer_discard\l+ size_input_sdus_buffer\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

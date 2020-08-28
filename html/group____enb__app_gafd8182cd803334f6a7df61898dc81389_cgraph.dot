@@ -1,0 +1,34 @@
+digraph "read_config_and_init"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="l1_north_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8c.html#a118d7493b79eca11eadef96fa7d10eaa",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="configure_nfapi_pnf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8c.html#a8efa96c6ac7c3f4021df0182b46ec095",tooltip=" "];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$config_8c.html#a7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RCconfig_RRC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#ga788c48219c2294d2dc474178b4ad695d",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="config_check_band_frequencies",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$RRC__config__tools_8c.html#aadfe3c008ef898dc7c298acaab216836",tooltip=" "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="config_get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cu__test_8c.html#a3d38a8623290b9d0a89306036e1c53b4",tooltip=" "];
+  Node7 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="fill_eMTC_configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gac3aacdb56fc3b001f3b5082e91cadec8",tooltip=" "];
+  Node10 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="fill_SL_configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad60b8026e14ec3babc02d8b620223523",tooltip=" "];
+  Node7 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trace__hashtable_8c.html#a89cded44d5106ffaeb0d2dab42c2d43f",tooltip=" "];
+  Node12 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

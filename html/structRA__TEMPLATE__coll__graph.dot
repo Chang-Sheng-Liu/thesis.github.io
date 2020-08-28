@@ -1,0 +1,7 @@
+digraph "RA_TEMPLATE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RA_TEMPLATE\n|+ RA_active\l+ RA_dci_size_bytes1\l+ RA_dci_size_bits1\l+ RA_alloc_pdu1\l+ RA_dci_fmt1\l+ RA_dci_size_bytes2\l+ RA_dci_size_bits2\l+ RA_alloc_pdu2\l+ RA_dci_fmt2\l+ generate_rar\land 34 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="eNB template for the Random access information"];
+}

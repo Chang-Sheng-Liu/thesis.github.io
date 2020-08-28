@@ -1,0 +1,7 @@
+digraph "Gtpv1uS1Req"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Gtpv1uS1Req\n|+ enb_ip_address_for\l_S1u_S12_S4_up\l+ enb_port_for_S1u_S12\l_S4_up\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

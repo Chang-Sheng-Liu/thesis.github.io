@@ -1,0 +1,7 @@
+digraph "pre_processor_results_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pre_processor_results_t\n|+ nb_rbs_required\l+ nb_rbs_accounted\l+ nb_rbs_remaining\l+ slice_allocation_mask\l+ MIMO_mode_indicator\l+ bytes_lcid\l+ wb_pmi\l+ mcs\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure for saving the output of each pre_processor instance."];
+}

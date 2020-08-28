@@ -1,0 +1,34 @@
+digraph "inter_ul"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="inter_ul",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="check_slice_isolation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html#a208f843d68c9a33cc830757a7fd2dabe",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="find_resource_location",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html#a843d57689dc468d82ccfc38d829c9529",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_nb_required_rb\l_of_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html#a37b62166ca57e55a1c2947e92fd110e7",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="nb_rbs_allowed_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9b2f93599394d16d8f54a817d8e24b8a",tooltip=" "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="handle_first_rb_for\l_resource_sharing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html#a6b448de39155e59527eb267288f51931",tooltip=" "];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="slice_priority_sort_ul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html#ae475e8b61b2403ae8d78585f44ce048d",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sort_ue_ul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pre__processor_8c.html#a4dd5976a915c4fb62b76449d27a09942",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ue_ul_slice_membership",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gadf38014b919b7ac76c4dc33eecbd001b",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="to_rbg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gae94d89d4d8082f7704d151ec4a3c67da",tooltip=" "];
+}

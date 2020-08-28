@@ -1,0 +1,14 @@
+digraph "ue_query_mch"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ue_query_mch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ue_get_mbsfn_sf_alloction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga438ca6aa098ac04c5683b51e9e958c35",tooltip="check the mapping between sf allocation and sync area, Currently only supports 1:1 mapping"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ue_query_p_mch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ue__procedures_8c.html#ae463223fa61d7b2659a26902d7d1b97d",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_query_p_mch_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ue__procedures_8c.html#ae1ac33f16a7beb0d14e563c0d2caf862",tooltip=" "];
+}

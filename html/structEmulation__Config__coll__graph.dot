@@ -1,0 +1,17 @@
+digraph "Emulation_Config"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Emulation_Config\n|+ emulation_time_ms\l+ curve\l+ background_stats\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +seed" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Seed\n|+ value\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSeed.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +performance_metrics" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Performance_Metrics\n|+ throughput\l+ latency\l+ loss_rate\l+ signalling_overhead\l+ owd_radio_access\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerformance__Metrics.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +log_emu" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{Log_Emu\n|+ level\l+ verbosity\l+ interval\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLog__Emu.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +packet_trace" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{Packet_Trace\n|+ enabled\l+ start_time\l+ end_time\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPacket__Trace.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +layer" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{Layer\n|+ phy\l+ mac\l+ rlc\l+ rrc\l+ pdcp\l+ omg\l+ emu\l+ otg\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structLayer.html",tooltip=" "];
+}

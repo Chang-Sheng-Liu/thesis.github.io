@@ -1,0 +1,14 @@
+digraph "job_list_struct"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{job_list_struct\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pair" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{pair_struct\n|+ next_event_t\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpair__struct.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +b" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{node_struct\n|+ id\l+ gid\l+ type\l+ mobile\l+ x_pos\l+ y_pos\l+ generator\l+ block_num\l+ event_num\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnode__struct.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +mob" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

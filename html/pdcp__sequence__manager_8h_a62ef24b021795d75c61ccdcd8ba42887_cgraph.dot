@@ -1,0 +1,10 @@
+digraph "pdcp_is_seq_num_valid"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="pdcp_is_seq_num_valid",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pdcp_calculate_max\l_seq_num_for_given_size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__sequence__manager_8c.html#a8a99adb0c43249165d43fe060fd044be",tooltip=" "];
+}

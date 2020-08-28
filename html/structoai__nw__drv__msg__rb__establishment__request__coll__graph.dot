@@ -1,0 +1,7 @@
+digraph "oai_nw_drv_msg_rb_establishment_request"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{oai_nw_drv_msg_rb_establishment\l_request\n|+ lcr\l+ rab_id\l+ qos\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

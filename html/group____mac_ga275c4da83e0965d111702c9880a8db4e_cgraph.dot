@@ -1,0 +1,32 @@
+digraph "get_nb_slice_required_rb_dl"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="get_nb_slice_required\l_rb_dl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="本函式負責讀取各UE的RLC buffer status（unit: byte），並轉換成rb數量存入slice_required_rb，因此輸出結果會得到該slice在那個scheduling sub..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="cqi2mcs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pre__processor_8c.html#a898c35bf945957b49c4fc9d3ca45b6be",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_min_rb_unit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaab443c4ed923af43ed219ef56239dedc",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="read_total_rlc_buffer\l_size_of_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7984896dd11353129bd518c522a96be8",tooltip="本函式是協助get_nb_slice_required_rb_dl(）取得RLC buffer status 的函式."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="mac_rlc_status_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab02bd6cca3f46350ea44e5afbd3282da",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rlc_am_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga15180e8939fdaa3460571097725529d1",tooltip="Request the maximum number of bytes that can be served by RLC instance to MAC and fix the amount of b..."];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="rlc_tm_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab2b184fc692c5735e92172c469508824",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rlc_um_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga081443f7a65ddc28f9a462ea0c8a5e93",tooltip=" "];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ue_dl_slice_membership",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9648413305f4341d12713a15b8e62916",tooltip="本函式負責DＬ slice 的 ue_list篩選，根據輸入的UE_id 與 slice id 做判斷, 若此ＵＥ屬於輸入的這個slice id 則return true,..."];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="UE_PCCID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga63d612e6b94450ff40406b999ab25448",tooltip=" "];
+  Node4 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

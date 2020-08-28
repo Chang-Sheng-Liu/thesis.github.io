@@ -1,0 +1,46 @@
+digraph "get_bw_index"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="get_bw_index",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="check_ul_failure",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler_8c.html#af48e560265cb7fa55295580e5fdca021",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="eNB_dlsch_ulsch_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2a3ebd99050898af5b0f5ff9c9785897",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="UL_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a0e2ef22a02b2c6683ab06f6d53f92e4d",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="IF_Module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a889f718a2d163ae240f8aa0732d35a81",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gafd8182cd803334f6a7df61898dc81389",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="dlsch_scheduler_pre\l_ue_select_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a92b6f5e143ae3e918d97b211eee1b3f1",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="dlsch_scheduler_pre\l_processor_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a7da6f349ceb5e7c4aaa672b485af4c57",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="schedule_ue_spec_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a7cb0cf3bc998bebe482e86b52503abb1",tooltip=" "];
+  Node12 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="schedule_ue_spec_phy_test",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaf37ba484dd657678cb1a760027e945e6",tooltip=" "];
+  Node13 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="schedule_ulsch_rnti\l_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#aa934d69ee1837d4678ccbf53c0d67ca2",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="schedule_ulsch_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a8146cedda1d2207695a30d8088ecd35e",tooltip=" "];
+  Node15 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="ulsch_scheduler_pre\l_ue_select_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a40fe32e5a8c40cf65225546cecf6993e",tooltip=" "];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="ulsch_scheduler_pre\l_processor_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a1cfa9842d926e1daebfaca5b21689f08",tooltip=" "];
+  Node17 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

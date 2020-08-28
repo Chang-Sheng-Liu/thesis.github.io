@@ -1,0 +1,12 @@
+digraph "osa_snow3g_initialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="osa_snow3g_initialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="stream_encrypt_eea1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html#ad1aedad66fa04a02978158156bd3620a",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="stream_encrypt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html#acf80289e97a7380fadeccee4ac3c12b1",tooltip="Encrypt/Decrypt a block of data based on the provided algorithm."];
+}

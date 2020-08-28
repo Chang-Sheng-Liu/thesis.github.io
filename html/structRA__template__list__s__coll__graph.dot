@@ -1,0 +1,11 @@
+digraph "RA_template_list_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RA_template_list_s\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{RA_TEMPLATE_NB_IoT_s\n|+ active\l+ msg3_retransmit_count\l+ msg4_retransmit_count\l+ ta\l+ preamble_index\l+ ce_level\l+ ue_rnti\l+ ra_rnti\l+ wait_msg4_ack\l+ wait_msg3_ack\l+ rar_buffer\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRA__TEMPLATE__NB__IoT__s.html",tooltip="eNB template for the Random access information"];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +next\n+prev" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

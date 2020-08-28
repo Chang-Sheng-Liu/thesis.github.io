@@ -1,0 +1,14 @@
+digraph "rlc_am_configure"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_am_configure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Set RLC AM protocol parameters."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_am_init_timer_poll\l_retransmit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gac07157a49820c01e5c4ed978d4655921",tooltip="Initialize the timer Poll-retransmit with RLC AM time-out config parameter."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_am_init_timer_reordering",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gad51249713b656cd4ff24741477a28695",tooltip="Initialize the timer reordering with RLC AM time-out config parameter."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rlc_am_init_timer_status\l_prohibit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gac16129a33196b1d10441cdc26f90a458",tooltip="Initialize the timer status-prohibit with RLC AM time-out config parameter."];
+}

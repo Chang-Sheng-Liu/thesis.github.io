@@ -1,0 +1,13 @@
+digraph "Event_List_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Event_List_s\n|+ nb_elements\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Event_element_s\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structEvent__element__s.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Event_t\n|+ type\l+ optype\l+ key\l+ value\l+ frame\l+ ue\l+ lcid\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structEvent__t.html",tooltip=" "];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +next\n+previous" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

@@ -1,0 +1,9 @@
+digraph "backgroundStream_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{backgroundStream_t\n|+ meanNumSessions\l+ lastUpdateTime\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +activeSessions" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{backgroundSession_t\n|+ meanSessionRate\l+ endTime\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structbackgroundSession__t.html",tooltip=" "];
+}

@@ -1,0 +1,16 @@
+digraph "tarmaCalculateVideoSample"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="tarmaCalculateVideoSample",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="gaussian_dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a256026f4011ad3c63c4a5f79ba6c2aaa",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="uniform_rng",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a8451bb33f8030cc168c63d60812921f4",tooltip="generates uniform random number with algo: wichman_hill / random() / Taus"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="taus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8h.html#a362f00415eaebca7255f9c4d08bd9fd6",tooltip="compute random number"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="tarmaCalculateSample",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__models_8c.html#a370960c2b4cedf00710a97f39e40f18e",tooltip=" "];
+}

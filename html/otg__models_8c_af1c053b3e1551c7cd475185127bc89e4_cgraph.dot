@@ -1,0 +1,29 @@
+digraph "backgroundStreamInit"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="backgroundStreamInit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="backgroundPrintStream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__models_8c.html#a260b9583693352ce68ee5f1fdb0d1e0c",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="backgroundRateRnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__models_8c.html#a82f3ae98276fd6487b76f5238f2b7d03",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lognormal_dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a2573a6daebc0a7d4785ac7deaf336dc1",tooltip="generates random numbers for the log normal distribution with mean parameter and standard deviation p..."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="gaussian_dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a256026f4011ad3c63c4a5f79ba6c2aaa",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="uniform_rng",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a8451bb33f8030cc168c63d60812921f4",tooltip="generates uniform random number with algo: wichman_hill / random() / Taus"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="taus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8h.html#a362f00415eaebca7255f9c4d08bd9fd6",tooltip="compute random number"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="backgroundSessionDurationRnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__models_8c.html#aa1bdd73662525153aaec8f96e52e9840",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="exponential_dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#aa7b93c1af2503846f0d2c0380b9e6ac4",tooltip=" "];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="poisson_dist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8c.html#a43bb38a1ace16507de30f6ac57f3cc6f",tooltip="generates random numbers for the poisson distribution"];
+  Node10 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

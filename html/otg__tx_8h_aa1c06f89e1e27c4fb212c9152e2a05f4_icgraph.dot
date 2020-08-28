@@ -1,0 +1,17 @@
+digraph "payload_pkts"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="payload_pkts",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="generate the payload"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="packet_gen_socket",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__tx__socket_8h.html#a1ce80e75d63448e1e6992c038953e6f2",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="client_socket_tcp_ip4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__tx__socket_8h.html#a973c44c2092fcbadc02ad73bfeafe650",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="socket_packet_send",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__tx__socket_8h.html#aea397ae798fe1db8a061e413bfe530f9",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="client_socket_udp_ip4",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__tx__socket_8h.html#aa876594bd36c5014caefd6ee76b56901",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

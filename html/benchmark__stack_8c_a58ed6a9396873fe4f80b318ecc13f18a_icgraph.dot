@@ -1,0 +1,12 @@
+digraph "benchmark_lfds611_stack_thread_push_and_pop"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="benchmark_lfds611_stack\l_thread_push_and_pop",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="benchmark_lfds611_stack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds6_81_81_2test_2src_2internal_8h.html#ae62f2383428b4bdfdfef084fcb51eb14",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2LFDS_2liblfds6_81_81_2test_2src_2main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+}

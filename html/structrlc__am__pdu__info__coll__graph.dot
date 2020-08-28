@@ -1,0 +1,7 @@
+digraph "rlc_am_pdu_info"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_am_pdu_info\n|+ d_c\l+ rf\l+ p\l+ fi\l+ e\l+ sn\l+ lsf\l+ so\l+ num_li\l+ li_list\l+ hidden_size\l+ payload\l+ payload_size\l+ header_size\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

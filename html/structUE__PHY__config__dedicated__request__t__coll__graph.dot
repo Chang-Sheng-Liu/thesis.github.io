@@ -1,0 +1,21 @@
+digraph "UE_PHY_config_dedicated_request_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_PHY_config_dedicated\l_request_t\n|+ transmission_mode\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pucch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{UE_PHY_pucch_config\l_dedicated_t\n|+ ackNackRepetition\l+ tdd_AckNackFeedbackMode\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pucch__config__dedicated__t.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pusch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UE_PHY_pusch_config\l_dedicated_t\n|+ betaOffset_ACK_Index\l+ betaOffset_RI_Index\l+ betaOffset_CQI_Index\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pusch__config__dedicated__t.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pdsch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{UE_PHY_pdsch_config\l_dedicated_t\n|+ p_a\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pdsch__config__dedicated__t.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_srs_ul_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{UE_PHY_srs_ul_config\l_dedicated_t\n|+ srsConfigDedicatedSetup\l+ duration\l+ cyclicShift\l+ freqDomainPosition\l+ srs_Bandwidth\l+ srs_ConfigIndex\l+ srs_HoppingBandwidth\l+ transmissionComb\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__srs__ul__config__dedicated__t.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_ul_pow_cntrl_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{UE_PHY_ul_power_control\l_config_dedicated_t\n|+ p0_UE_PUSCH\l+ deltaMCS_Enabled\l+ accumulationEnabled\l+ p0_UE_PUCCH\l+ pSRS_Offset\l+ filterCoefficient\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__ul__power__control__config__dedicated__t.html",tooltip=" "];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_cqi_report_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{UE_PHY_cqi_report_config\l_dedicated_t\n|+ cqi_ReportModeAperiodic\l+ CQI_ReportPeriodic\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__cqi__report__config__dedicated__t.html",tooltip=" "];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_SR_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{UE_PHY_SR_config_dedicated_t\n|+ sr_PUCCH_ResourceIndex\l+ sr_ConfigIndex\l+ dsr_TransMax\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__SR__config__dedicated__t.html",tooltip=" "];
+}

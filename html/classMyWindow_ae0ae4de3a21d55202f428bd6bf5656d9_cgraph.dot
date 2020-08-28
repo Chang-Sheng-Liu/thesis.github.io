@@ -1,0 +1,37 @@
+digraph "MyWindow::MyWindow"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="MyWindow::MyWindow",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MyWindow::setDrawConnections",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a869146283caa0ddfa86decf211e0e2ae",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLWidget::setDrawConnections",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#aa8da16ff8ccecc713b4db1fb30384d10",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="MyWindow::setLinksColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a1cec38cabd8c54b2a0f71871f4c7d0c5",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLWidget::setLinksColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#aa9d5198d2aa2520524022956bd8c61ab",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="MyWindow::setNodesColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a752868f58e4c7d27e514587a2f0db498",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLWidget::setNodesColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a4157f9497208be6f8403db78fb8d1ea6",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="MyWindow::setUsedMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a38ba2cf2f76fe766c4165c44170ca804",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="MyWindow::importMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a8a00ad499cba38db3d5ceb6ee5363256",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="OpenGLWidget::setUsedMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#afffb14152a56198fe10114d237c396b8",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="MyWindow::setUseMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a11f050f184f5fc1a943cdac34d7af71e",tooltip=" "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="OpenGLWidget::setUseMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a07d81465c4f24bfd70104cf7f90d6514",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="MyWindow::updateSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a15252c12a75a40bda9dc5f592f29eaa8",tooltip=" "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="OpenGLWidget::updateNodeSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#adef21f50151235851b3d1f752299b86e",tooltip=" "];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="MyWindow::updateSupervNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#ab9132e584c848858ce62535412b33b7e",tooltip=" "];
+}

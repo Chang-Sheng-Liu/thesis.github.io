@@ -1,0 +1,11 @@
+digraph "RRC/LTE/MESSAGES" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_51e92ac842e258dce6a0132670be5193 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="LTE" fontname="Helvetica", fontsize="10", URL="dir_51e92ac842e258dce6a0132670be5193.html"]
+  dir_17a72a816e4a4ee15b6b68c54d76ba10 [shape=box, label="MESSAGES", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_17a72a816e4a4ee15b6b68c54d76ba10.html"];
+  }
+  dir_0166fe07a796440ce838c7f409d24361 [shape=box label="ENB_APP" fillcolor="white" style="filled" color="red" URL="dir_0166fe07a796440ce838c7f409d24361.html"];
+  dir_17a72a816e4a4ee15b6b68c54d76ba10->dir_0166fe07a796440ce838c7f409d24361 [headlabel="2", labeldistance=1.5 headhref="dir_000047_000006.html"];
+}

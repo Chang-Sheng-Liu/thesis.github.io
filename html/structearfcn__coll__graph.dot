@@ -1,0 +1,7 @@
+digraph "earfcn"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{earfcn\n|+ band\l+ dl_flow\l+ dl_off\l+ dl_offmin\l+ dl_offmax\l+ ul_flow\l+ ul_off\l+ ul_offmin\l+ ul_offmax\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

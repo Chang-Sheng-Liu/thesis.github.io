@@ -1,0 +1,9 @@
+digraph "Parsing Position Indicator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node2 [label="Parse XML",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____parse__XML.html",tooltip="Parse the XML configuration file."];
+  Node1 [label="Parsing Position Indicator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Indicate the position where the program is current parsing in the XML file."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+}

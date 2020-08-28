@@ -1,0 +1,18 @@
+digraph "flexran_agent_fill_mac_ue_config"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="flexran_agent_fill\l_mac_ue_config",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_get_mac_ue\l_crnti",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#aeabe4485a5e0fc1b1f5915b8dd227af0",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_get_ue_aggregated\l_max_bitrate_dl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a46d154fcf319e449ac122b852b325a95",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_get_ue_aggregated\l_max_bitrate_ul",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#afd516b00da22ae5af5d5d6ec9ac7c5da",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="flexran_get_ue_dl_slice_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ac9f8a7e31667b720b38ab4c4582ae589",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="flexran_get_ue_ul_slice_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ad176e24ee62ce39d11eb9b774a1820cc",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+digraph "ENB_APP/CONTROL_MODULES/RRC" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_a9b50eafa6fe4feab2a5219d801601da {
+    graph [ bgcolor="#ddddee", pencolor="black", label="CONTROL_MODULES" fontname="Helvetica", fontsize="10", URL="dir_a9b50eafa6fe4feab2a5219d801601da.html"]
+  dir_5f9597e34cfd4d38045e4c80b254d657 [shape=box, label="RRC", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_5f9597e34cfd4d38045e4c80b254d657.html"];
+  }
+  dir_589c038ec477796bd05e0ef97bb6baa5 [shape=box label="UTIL" fillcolor="white" style="filled" color="red" URL="dir_589c038ec477796bd05e0ef97bb6baa5.html"];
+  dir_5f9597e34cfd4d38045e4c80b254d657->dir_589c038ec477796bd05e0ef97bb6baa5 [headlabel="1", labeldistance=1.5 headhref="dir_000011_000020.html"];
+}

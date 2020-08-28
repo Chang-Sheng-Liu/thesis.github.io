@@ -1,0 +1,21 @@
+digraph "UTIL/LFDS/liblfds6.1.1/liblfds611/src/lfds611_queue/lfds611_queue_internal.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/LFDS/liblfds6.1.1\l/liblfds611/src/lfds611\l_queue/lfds611_queue_internal.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="liblfds611_internal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611__internal_8h.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="liblfds611.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lfds611_abstraction\l/lfds611_abstraction_cas.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__abstraction__cas_8c.html",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lfds611_abstraction\l_internal_body.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__abstraction__internal__body_8h.html",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="lfds611_abstraction\l/lfds611_abstraction\l_dcas.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__abstraction__dcas_8c.html",tooltip=" "];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lfds611_abstraction\l/lfds611_abstraction\l_increment.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__abstraction__increment_8c.html",tooltip=" "];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

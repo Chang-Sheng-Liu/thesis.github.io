@@ -1,0 +1,16 @@
+digraph "initiate_soft_restart"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="initiate_soft_restart",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_set_operating\l_bandwidth",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a114c2653bc372516eecd5e0e2ea46d95",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_agent_set_operating\l_dl_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a129409f184d27d3d4e5b1de630c501e3",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_agent_set_operating\l_eutra_band",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a40e5de92a873dfb79e583b17c35513e1",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="flexran_agent_set_operating\l_ul_freq",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ad57aa144a66853a2168f8b0ee3ed00a7",tooltip=" "];
+}

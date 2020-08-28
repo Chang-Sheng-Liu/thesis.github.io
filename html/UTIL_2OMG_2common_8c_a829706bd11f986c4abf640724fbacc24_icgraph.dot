@@ -1,0 +1,12 @@
+digraph "delete_node_entry"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="delete_node_entry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="clear_node_list",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2common_8c.html#a3b1fce9ad6ba221441431d8267dd3b40",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="remove_node",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2defs_8h.html#a556e1bb36064a8ff4021c141b22da730",tooltip=" "];
+}

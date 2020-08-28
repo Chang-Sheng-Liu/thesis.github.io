@@ -1,0 +1,17 @@
+digraph "UTIL/OMV/mywindow.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/OMV/mywindow.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="manages the window and its components"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UTIL/OMV/communicationthread.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$communicationthread_8h.html",tooltip="this thread is to process the communication between the simulator and the visualisor"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="UTIL/OMV/communicationthread.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$communicationthread_8cpp.html",tooltip="this thread is to process the communication between the simulator and the visualisor"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="UTIL/OMV/mywindow.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mywindow_8cpp.html",tooltip="manages the window and its components"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UTIL/OMV/omv.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$omv_8cpp.html",tooltip="openair mobility visualisor"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

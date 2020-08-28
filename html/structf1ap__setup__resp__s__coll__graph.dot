@@ -1,0 +1,7 @@
+digraph "f1ap_setup_resp_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{f1ap_setup_resp_s\n|+ cnx_id\l+ assoc_id\l+ sctp_in_streams\l+ sctp_out_streams\l+ gNB_CU_name\l+ num_cells_to_activate\l+ mcc\l+ mnc\l+ mnc_digit_length\l+ nr_cellid\l+ nrpci\l+ num_SI\l+ SI_container\l+ SI_container_length\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

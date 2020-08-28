@@ -1,0 +1,13 @@
+digraph "OCG Finite State Machine (FSM)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="Environment Configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____envi__config.html",tooltip="Including simulation area, geography, topography, fading information, etc."];
+  Node1 [label="OCG Finite State Machine\l (FSM)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="See the flow chart for details."];
+  Node2 [label="Macro Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____useful__macro.html",tooltip="the following macros will be used in the code of OCG"];
+  Node3 [label="FSM Flow Chart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____fsm__flow.html",tooltip="This flow chart shows how the FSM works."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

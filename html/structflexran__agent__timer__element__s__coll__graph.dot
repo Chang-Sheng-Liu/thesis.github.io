@@ -1,0 +1,9 @@
+digraph "flexran_agent_timer_element_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{flexran_agent_timer\l_element_s\n|+ agent_id\l+ instance\l+ type\l+ state\l+ interval_sec\l+ interval_usec\l+ timer_id\l+ xid\l+ cb\l|+ RB_ENTRY()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +timer_args" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{flexran_agent_timer\l_args_s\n|+ mod_id\l+ msg\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structflexran__agent__timer__args__s.html",tooltip=" "];
+}

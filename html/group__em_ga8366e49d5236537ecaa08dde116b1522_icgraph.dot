@@ -1,0 +1,10 @@
+digraph "rlc_um_segment_5"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rlc_um_segment_5",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Segmentation procedure with 5 bits sequence number, segment the first SDU in buffer and create a PDU ..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_um_get_pdus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gadf85387ab191e8a94cfc6f7d204da6ed",tooltip=" "];
+}

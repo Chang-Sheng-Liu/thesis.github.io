@@ -1,0 +1,36 @@
+digraph "NETWORK_DRIVER/MESH/rrc_nas_primitives.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="NETWORK_DRIVER/MESH\l/rrc_nas_primitives.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="NETWORK_DRIVER/MESH\l/local.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2local_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="NETWORK_DRIVER/MESH\l/classifier.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2classifier_8c.html",tooltip="Classify IP packets."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="NETWORK_DRIVER/MESH\l/common.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$NETWORK__DRIVER_2MESH_2common_8c.html",tooltip="implementation of emultor tx and rx"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="NETWORK_DRIVER/MESH\l/device.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2device_8c.html",tooltip="Networking Device Driver for OpenAirInterface MESH."];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="NETWORK_DRIVER/MESH\l/ioctl.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2ioctl_8c.html",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="NETWORK_DRIVER/MESH\l/mesh.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mesh_8c.html",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="NETWORK_DRIVER/MESH\l/netlink.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2netlink_8c.html",tooltip="establish a netlink"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="NETWORK_DRIVER/MESH\l/proto_extern.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2proto__extern_8h.html",tooltip=" "];
+  Node9 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="NETWORK_DRIVER/MESH\l/tool.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2tool_8c.html",tooltip=" "];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="NETWORK_DRIVER/MESH\l/RB_TOOL/rb_tool.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2RB__TOOL_2rb__tool_8c.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="RRC/NAS/rb_config.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rb__config_8c.html",tooltip="User-space utility for configuring NASMESH IOCTL interface."];
+}

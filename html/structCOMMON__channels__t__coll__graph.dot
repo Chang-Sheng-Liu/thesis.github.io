@@ -1,0 +1,13 @@
+digraph "COMMON_channels_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{COMMON_channels_t\n|+ physCellId\l+ p_eNB\l+ Ncp\l+ eutra_band\l+ dl_CarrierFreq\l+ mib\l+ radioResourceConfigCommon\l+ radioResourceConfigCommon_BR\l+ tdd_Config\l+ schedulingInfoList\land 32 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="eNB common channels"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ra" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{RA_t\n|+ state\l+ preamble_subframe\l+ Msg2_subframe\l+ Msg2_frame\l+ Msg3_subframe\l+ Msg3_frame\l+ Msg4_delay_cnt\l+ Msg4_subframe\l+ Msg4_frame\l+ harq_pid\land 25 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRA__t.html",tooltip="eNB template for the Random access information"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +mbms_SessionList\n+mbsfn_AreaInfo\n+mbsfn_SubframeConfig\n+non_mbsfn_SubframeConfig\n+pmch_Config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +RA_template" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{RA_TEMPLATE\n|+ RA_active\l+ RA_dci_size_bytes1\l+ RA_dci_size_bits1\l+ RA_alloc_pdu1\l+ RA_dci_fmt1\l+ RA_dci_size_bytes2\l+ RA_dci_size_bits2\l+ RA_alloc_pdu2\l+ RA_dci_fmt2\l+ generate_rar\land 34 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRA__TEMPLATE.html",tooltip="eNB template for the Random access information"];
+}

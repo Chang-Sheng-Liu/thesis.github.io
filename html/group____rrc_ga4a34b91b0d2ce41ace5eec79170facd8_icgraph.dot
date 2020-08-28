@@ -1,0 +1,37 @@
+digraph "rrc_ue_process_radioResourceConfigDedicated"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rrc_ue_process_radioResource\lConfigDedicated",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Process a RadioResourceConfigDedicated Message and configure PHY/MAC."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rrc_ue_decode_ccch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#gafeede0bc08155a888fc2c8f1d113a80d",tooltip="Decodes DL-CCCH message and invokes appropriate routine to handle the message."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mac_rrc_data_ind_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga81d228980a27c3379568d77e89865d35",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_decode_p",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gacb9383b30cfa1e89eb884c71184c38f5",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dl_config_req_UE_MAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8h.html#a72d909a6a600ac50080469c6b113d330",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ue_decode_si",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga24e4a25ebe83757ad951d227d8a66380",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ue_decode_si_mbms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gac7dc4f7d76939d70d87665cb72de2b0a",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ue_send_mch_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga1a523251e23101d551f32120b59821d6",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ue_send_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga0e048d86d492024a8081694c4db1b205",tooltip=" "];
+  Node9 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ue_send_sl_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga772d4b4e4d68df2cb7b07293bc786673",tooltip=" "];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="rrc_ue_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga0c758807c5db924014c340730b210f28",tooltip="RRC UE task."];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="rrc_ue_process_rrcConnection\lReconfiguration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga69b91ce240794d9ff2ea05e081a0cb71",tooltip="process the received rrcConnectionReconfiguration message at UE"];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="rrc_ue_decode_dcch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga6dfdf38f6361516a60dc42aaf3090e05",tooltip="Decodes a DL-DCCH message and invokes appropriate routine to handle the message."];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="rrc_data_ind_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$L2__interface__ue_8c.html#a44b28f0e3904bcda3c99685a2d9a4e0e",tooltip=" "];
+  Node13 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

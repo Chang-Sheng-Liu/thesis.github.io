@@ -1,0 +1,7 @@
+digraph "scheduling_flag_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{scheduling_flag_t\n|+ flag_MIB\l+ flag_SIB1\l+ flag_SIBs\l+ flag_type2_css\l+ flag_type1_css\l+ flag_uss\l+ flag_fix_scheduling\l+ num_type2_css_run\l+ num_type1_css_run\l+ num_uss_run\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

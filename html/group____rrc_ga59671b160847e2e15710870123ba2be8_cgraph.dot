@@ -1,0 +1,10 @@
+digraph "openair_rrc_top_init_ue"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="openair_rrc_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="fill_ue_capability",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$asn1__msg_8c.html#af48c63a0a07a3897f999514ef7fbd047",tooltip=" "];
+}

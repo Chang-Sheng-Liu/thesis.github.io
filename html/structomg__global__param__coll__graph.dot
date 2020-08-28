@@ -1,0 +1,7 @@
+digraph "omg_global_param"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{omg_global_param\n|+ nodes\l+ min_x\l+ max_x\l+ min_y\l+ max_y\l+ user_fixed\l+ fixed_x\l+ fixed_y\l+ min_speed\l+ max_speed\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

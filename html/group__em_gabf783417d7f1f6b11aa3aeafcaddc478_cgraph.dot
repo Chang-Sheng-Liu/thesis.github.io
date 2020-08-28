@@ -1,0 +1,10 @@
+digraph "ue_ip_common_ip2wireless"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ue_ip_common_ip2wireless",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ue_ip_netlink_send",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UE__IP_2netlink_8c.html#ac0d77c67e8f0858284a61a32e5a1f4b2",tooltip=" "];
+}

@@ -1,0 +1,29 @@
+digraph "lfds611_ringbuffer_put_write_element"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="lfds611_ringbuffer\l_put_write_element",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="benchmark_lfds611_ringbuffer\l_thread_write_and_read",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds6_81_81_2test_2src_2internal_8h.html#ab522d5154d8e139affa942e6b0943574",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="benchmark_lfds611_ringbuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds6_81_81_2test_2src_2internal_8h.html#a0ee0b1ccd335333378d59a07232d052b",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2LFDS_2liblfds6_81_81_2test_2src_2main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ringbuffer_test_reading",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#acea7fcc1cef012c3a1786ffeb579773d",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="test_lfds611_ringbuffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#a52cca45019fa8713ede0315242dc2639",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ringbuffer_test_thread\l_reader_writer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#a2c9aa59d49e0c97bd59b859adaf53acc",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ringbuffer_test_reading\l_and_writing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#ad77615a02be8970a969721763aab3a22",tooltip=" "];
+  Node8 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ringbuffer_test_thread\l_simple_writer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#a797e721a19e0fecf38f6c36c8bd7731e",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="ringbuffer_test_writing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$test__ringbuffer_8c.html#ab6f3a403c6f25abb82a1667bbf40c2e7",tooltip=" "];
+  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

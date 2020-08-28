@@ -1,0 +1,16 @@
+digraph "f1ap_handle_message"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="f1ap_handle_message",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="cu_task_handle_sctp\l_data_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__cu__task_8h.html#a7c91444bf60494dd2de7635a3b6b614a",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="F1AP_CU_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__cu__task_8h.html#a0383570bfaf226e5df424904480e7399",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="du_task_handle_sctp\l_data_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__task_8h.html#a4e1db3af176329a42b9810379c1d4187",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="F1AP_DU_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__task_8h.html#a179d85615869309ee3cb39981c12aa53",tooltip=" "];
+}

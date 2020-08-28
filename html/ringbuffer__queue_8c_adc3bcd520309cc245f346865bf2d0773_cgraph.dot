@@ -1,0 +1,22 @@
+digraph "new_message_queue"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="new_message_queue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds700_misc_library\l_init_valid_on_current\l_logical_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__misc_8h.html#aa5c2af887960b7f6c53bc17d95774c68",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lfds700_misc_prng_internal\l_big_slow_high_quality_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__misc__internal_8h.html#a688d9613aaa2402d16e5fd5d072c36fb",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lfds700_misc_prng_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__misc_8h.html#a7e04616cfdaac388cf2490d78fb4ea70",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lfds700_ringbuffer\l_init_valid_on_current\l_logical_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__ringbuffer_8h.html#ab5e1480d6c1b8846c0a1f3b21fd1b2de",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="lfds700_freelist_init\l_valid_on_current_logical_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__freelist_8h.html#af0474e0cc0dacbead0262937d0c414d5",tooltip=" "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lfds700_freelist_push",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__freelist_8h.html#a9539c8a047c96fa79ca53e5815233d64",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="lfds700_queue_init\l_valid_on_current_logical_core",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__queue_8h.html#a88b4bce46a0a81d7d552729c7fe52664",tooltip=" "];
+}

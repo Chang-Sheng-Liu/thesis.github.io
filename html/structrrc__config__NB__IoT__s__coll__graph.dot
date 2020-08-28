@@ -1,0 +1,15 @@
+digraph "rrc_config_NB_IoT_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rrc_config_NB_IoT_s\n|+ schedulingInfoSIB1\l_NB_IoT\l+ cellIdentity_NB_IoT\l+ si_window_length\l+ si_radio_frame_offset\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +mac_NPRACH_ConfigSIB" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{mac_NPRACH_ConfigSIB\l_NB_IoT\n|+ mac_nprach_Periodicity\l_NB_IoT\l+ mac_nprach_StartTime\l_NB_IoT\l+ mac_nprach_SubcarrierOffset\l_NB_IoT\l+ mac_nprach_NumSubcarriers\l_NB_IoT\l+ mac_nprach_SubcarrierMSG3\l_RangeStart_NB_IoT\l+ mac_maxNumPreambleAttempt\lCE_NB_IoT\l+ mac_numRepetitionsPerPreamble\lAttempt_NB_IoT\l+ mac_npdcch_NumRepetitions\l_RA_NB_IoT\l+ mac_npdcch_StartSF\l_CSS_RA_NB_IoT\l+ mac_npdcch_Offset_RA\l_NB_IoT\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmac__NPRACH__ConfigSIB__NB__IoT.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +sib1_NB_IoT_sched\l_config\n+sibs_NB_IoT_sched" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +npdcch_ConfigDedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{npdcch_ConfigDedicated\l_NB_IoT\n|+ R_max\l+ G\l+ a_offset\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnpdcch__ConfigDedicated__NB__IoT.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +mac_RACH_ConfigCommon" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{mac_RACH_ConfigCommon\l_NB_IoT\n|+ mac_ra_ResponseWindowSize\l_NB_IoT\l+ mac_ContentionResolution\lTimer_NB_IoT\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmac__RACH__ConfigCommon__NB__IoT.html",tooltip=" "];
+}

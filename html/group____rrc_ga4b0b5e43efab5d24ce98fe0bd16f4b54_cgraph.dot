@@ -1,0 +1,28 @@
+digraph "release_UE_in_freeList"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="release_UE_in_freeList",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_get_rrc\l_xface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__rrc_8c.html#a81a4b61b62cbd82933fc5e20aed9bd08",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pdcp_remove_UE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#ga9eb9a8bc6147fb026ec43b569659fb52",tooltip="Function for RRC to remove UE from PDCP module hashtable."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="remove_UE_from_freelist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga10e6665ef6078c59b4c9e5a8743e9a4b",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rrc_eNB_get_ue_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a746860031d13c8ab30390dc0e7685e9f",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rrc_eNB_remove_ue_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a36d807f9c183d1af982d7671fe90a8eb",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="rrc_eNB_free_mem_UE\l_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga125920826627a1bc8270175727cb5349",tooltip=" "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="uid_linear_allocator_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a5801a86e75357242d060e039f0df7db4",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rrc_mac_remove_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2d1a1a9fdd1d4eac3b05078258de538c",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="rrc_rlc_remove_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga0da44c486411f7cc9441fe90bfc0e143",tooltip="Remove all RLC protocol instances from all radio bearers allocated to a UE."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="rrc_rlc_remove_rlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga4ddb06375ccc51dd862170704bd96085",tooltip="Remove a RLC protocol instance from a radio bearer."];
+}

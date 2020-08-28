@@ -1,0 +1,50 @@
+digraph "mac_rlc_status_ind"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="mac_rlc_status_ind",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="read_total_rlc_buffer\l_size_of_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7984896dd11353129bd518c522a96be8",tooltip="本函式是協助get_nb_slice_required_rb_dl(）取得RLC buffer status 的函式."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_nb_slice_required\l_rb_dl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga275c4da83e0965d111702c9880a8db4e",tooltip="本函式負責讀取各UE的RLC buffer status（unit: byte），並轉換成rb數量存入slice_required_rb，因此輸出結果會得到該slice在那個scheduling sub..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="inter_slice_dl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7ab2acef126a7e073a41b9be6f80ae1d",tooltip="這是本論文最重要的函式之一，負責處理downlink 的slice isolation和resource sharing 的運算處理。"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="schedule_MBMS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga467b6d5c32d1607f95d4da25b18601ad",tooltip="MBMS scheduling: Checking the position for MBSFN subframes. Create MSI, transfer MCCH from RRC to MAC..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="eNB_dlsch_ulsch_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2a3ebd99050898af5b0f5ff9c9785897",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="UL_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a0e2ef22a02b2c6683ab06f6d53f92e4d",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="IF_Module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a889f718a2d163ae240f8aa0732d35a81",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gafd8182cd803334f6a7df61898dc81389",tooltip=" "];
+  Node9 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="schedule_ue_spec_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a7cb0cf3bc998bebe482e86b52503abb1",tooltip=" "];
+  Node13 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="store_dlsch_buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga3884fec2a5a6031fa8bf50e8030e2b44",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="dlsch_scheduler_pre\l_processor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabd5df338fec1a4a9267ab153e6b357fc",tooltip=" "];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="dlsch_scheduler_pre\l_processor_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8h.html#a7da6f349ceb5e7c4aaa672b485af4c57",tooltip=" "];
+  Node16 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="ue_get_rach",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga5918f5763e3fe4a86e844e6da5feb5f2",tooltip=" "];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="ue_get_slsch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga6278262c8c981b951a38a0febe3f9cf6",tooltip=" "];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="update_bsr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaddd0ec59a529e99f88eeb2d10e4278a9",tooltip=" "];
+  Node19 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="ue_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga338746ce34cc27a9ea8740e2672f3aa9",tooltip=" "];
+}

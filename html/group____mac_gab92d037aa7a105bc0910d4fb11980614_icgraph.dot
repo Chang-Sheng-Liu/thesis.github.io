@@ -1,0 +1,16 @@
+digraph "get_DELTA_PREAMBLE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="get_DELTA_PREAMBLE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Function to compute DELTA_PREAMBLE from 36.321 (for RA power ramping procedure and Msg3 PUSCH power c..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="get_Po_NOMINAL_PUSCH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga006cf5eeb630be78d5af484e9a8365c5",tooltip="Function for UE/PHY to compute PUSCH transmit power in power-control procedure."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_prach_resources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ra__procedures_8c.html#ab11eedad6583cd019cc9b39ef5cba12c",tooltip="This routine implements Section 5.1.2 (UE Random Access Resource Selection) from 36...."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_get_rach",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga5918f5763e3fe4a86e844e6da5feb5f2",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

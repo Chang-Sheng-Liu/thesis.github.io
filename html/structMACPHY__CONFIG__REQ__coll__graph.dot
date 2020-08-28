@@ -1,0 +1,7 @@
+digraph "MACPHY_CONFIG_REQ"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MACPHY_CONFIG_REQ\n|+ Phy_framing\l+ Phy_chsch\l+ Phy_chbch\l+ Phy_sch\l+ Phy_sach\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="MACPHY-CONFIG-REQ primitive is used to configure a new instance of OpenAirInterface (static configura..."];
+}

@@ -1,0 +1,12 @@
+digraph "stream_encrypt_eea1"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="stream_encrypt_eea1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="osa_snow3g_generate\l_key_stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__snow3g_8c.html#a9c1a00f5e605b2c3a57eb2d9467c7890",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="osa_snow3g_initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__snow3g_8c.html#ac01f0ffc1384f600baa9609e7fb6db25",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "slice_mutex_cond"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{slice_mutex_cond\n|+ intra_final_input_mutex\l+ intra_final_start_mutex\l+ instance_slice_mutex\l+ count_finished_mutex\l+ intra_final_totally\l_mutex\l+ intra_final_start_cond\l+ intra_final_end_cond\l+ instance_slice\l+ count_finished\l+ intra_final\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

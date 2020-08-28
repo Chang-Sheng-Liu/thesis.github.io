@@ -1,0 +1,14 @@
+digraph "get_phr_mapping"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="get_phr_mapping",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="get phr mapping as described in 36.313"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ue_get_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7dbf8e68b29a515ddd61e673b3e6b4a0",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="handle_nfapi_ul_pdu\l_UE_MAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8h.html#a5b583efcc749346826a3a73a063d36a5",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ul_config_req_UE_MAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8h.html#acd96c5c54d8c7ea228f6e7956f531775",tooltip=" "];
+}

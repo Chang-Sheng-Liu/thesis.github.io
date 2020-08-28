@@ -1,0 +1,39 @@
+digraph "UTIL/LFDS/liblfds7.0.0/liblfds700/src/lfds700_stack/lfds700_stack_push.c"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/LFDS/liblfds7.0.0\l/liblfds700/src/lfds700\l_stack/lfds700_stack_push.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds700_stack_internal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__stack__internal_8h.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="../liblfds700_internal.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds700__internal_8h.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="../inc/liblfds700.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds700_8h.html",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="liblfds700/lfds700\l_porting_abstraction\l_layer_compiler.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__porting__abstraction__layer__compiler_8h.html",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="liblfds700/lfds700\l_porting_abstraction\l_layer_operating_system.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__porting__abstraction__layer__operating__system_8h.html",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="liblfds700/lfds700\l_porting_abstraction\l_layer_processor.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__porting__abstraction__layer__processor_8h.html",tooltip=" "];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="liblfds700/lfds700\l_misc.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__misc_8h.html",tooltip=" "];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="liblfds700/lfds700\l_btree_addonly_unbalanced.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__btree__addonly__unbalanced_8h.html",tooltip=" "];
+  Node4 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="liblfds700/lfds700\l_freelist.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__freelist_8h.html",tooltip=" "];
+  Node4 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="liblfds700/lfds700\l_hash_addonly.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__hash__addonly_8h.html",tooltip=" "];
+  Node4 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="liblfds700/lfds700\l_list_addonly_ordered\l_singlylinked.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__list__addonly__ordered__singlylinked_8h.html",tooltip=" "];
+  Node4 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="liblfds700/lfds700\l_list_addonly_singlylinked\l_unordered.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__list__addonly__singlylinked__unordered_8h.html",tooltip=" "];
+  Node4 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="liblfds700/lfds700\l_queue.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__queue_8h.html",tooltip=" "];
+  Node4 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="liblfds700/lfds700\l_queue_bounded_singleconsumer\l_singleproducer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__queue__bounded__singleconsumer__singleproducer_8h.html",tooltip=" "];
+  Node4 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="liblfds700/lfds700\l_ringbuffer.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__ringbuffer_8h.html",tooltip=" "];
+  Node4 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="liblfds700/lfds700\l_stack.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds700__stack_8h.html",tooltip=" "];
+}

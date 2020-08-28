@@ -1,0 +1,13 @@
+digraph "UTIL/FIFO/types.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/FIFO/types.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UTIL/FIFO/pad_list.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pad__list_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LAYER2/PDCP_v10.1.0\l/pdcp_fifo.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__fifo_8c.html",tooltip="pdcp interface with linux IP interface, have a look at http://man7.org/linux/man-pages/man7/netlink...."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="UTIL/FIFO/pad_list.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pad__list_8c.html",tooltip="list management primimtives"];
+}

@@ -1,0 +1,7 @@
+digraph "otg_forms_info_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{otg_forms_info_t\n|+ init_forms\l+ is_data_plot_ul\l+ is_data_plot_dl\l+ data_owd_ul\l+ data_throughput_ul\l+ data_ctime_ul\l+ idx_ul\l+ data_owd_dl\l+ data_throughput_dl\l+ data_ctime_dl\l+ idx_dl\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

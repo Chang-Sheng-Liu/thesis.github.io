@@ -1,0 +1,15 @@
+digraph "x2ap_eNB_instance_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{x2ap_eNB_instance_s\n|+ x2_target_enb_nb\l+ x2_target_enb_pending_nb\l+ x2_target_enb_associated_nb\l+ instance\l+ eNB_name\l+ eNB_id\l+ cell_type\l+ tac\l+ mcc\l+ mnc\land 17 more...\l|+ STAILQ_ENTRY()\l+ RB_HEAD()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +enb_x2_ip_address\n+target_enb_x2_ip\l_address" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +timers" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{x2ap_timers_t\n|+ tti\l+ t_reloc_prep\l+ tx2_reloc_overall\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structx2ap__timers__t.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +id_manager" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{x2ap_id_manager\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structx2ap__id__manager.html",tooltip=" "];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +ids" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{x2ap_id\n|+ rnti\l+ id_source\l+ id_target\l+ target\l+ state\l+ t_reloc_prep_start\l+ tx2_reloc_overall_start\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structx2ap__id.html",tooltip=" "];
+}

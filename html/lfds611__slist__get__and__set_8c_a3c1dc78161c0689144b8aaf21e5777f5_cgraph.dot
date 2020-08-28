@@ -1,0 +1,10 @@
+digraph "lfds611_slist_get_next"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="lfds611_slist_get_next",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds611_slist_internal\l_move_to_first_undeleted\l_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__slist__get__and__set_8c.html#a0506f25793c5b33594ff5b19a6d38527",tooltip=" "];
+}

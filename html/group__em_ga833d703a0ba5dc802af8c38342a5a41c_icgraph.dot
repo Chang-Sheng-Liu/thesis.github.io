@@ -1,0 +1,27 @@
+digraph "rb_free_rlc_union"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rb_free_rlc_union",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Free the rlc memory contained in the RLC embedded in the rlc_union_t struct pointed by of the rlcu_pP..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga8a21a99b77bae78c21114212ee98f69f",tooltip="RAZ the memory of the RLC layer, initialize the memory pool manager (mem_block_t structures mainly us..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gafd8182cd803334f6a7df61898dc81389",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="rlcmac_init_global\l_param",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LAYER2_2MAC_2main_8c.html#a0bec028cc2ce7c4aaaf426b17ed7921f",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="l2_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2c05eb84abdb36bbe2d9505fdf886af7",tooltip=" "];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rlcmac_init_global\l_param_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#a0da856384bb6fe02b877c5535073e721",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="l2_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga88b1a5dde9de1a9b6c6a3bb25e39953e",tooltip=" "];
+}

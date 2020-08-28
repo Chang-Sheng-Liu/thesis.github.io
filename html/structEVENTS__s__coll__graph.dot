@@ -1,0 +1,19 @@
+digraph "EVENTS_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{EVENTS_s\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +per_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{PER_EVENT_s\n|+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPER__EVENT__s.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a1_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{A1_EVENT_s\n|+ threshold_RSRP\l+ hysteresis\l+ timeToTrigger\l+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structA1__EVENT__s.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a3_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{A3_EVENT_s\n|+ a3_offset\l+ reportOnLeave\l+ hysteresis\l+ timeToTrigger\l+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structA3__EVENT__s.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a2_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{A2_EVENT_s\n|+ threshold_RSRP\l+ hysteresis\l+ timeToTrigger\l+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structA2__EVENT__s.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a5_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{A5_EVENT_s\n|+ threshold_RSRP_1\l+ threshold_RSRP_2\l+ hysteresis\l+ timeToTrigger\l+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structA5__EVENT__s.html",tooltip=" "];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a4_event" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{A4_EVENT_s\n|+ threshold_RSRP\l+ hysteresis\l+ timeToTrigger\l+ maxReportCells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structA4__EVENT__s.html",tooltip=" "];
+}

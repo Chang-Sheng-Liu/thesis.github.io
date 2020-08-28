@@ -1,0 +1,19 @@
+digraph "RCconfig_X2"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RCconfig_X2",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="config_get",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$cu__test_8c.html#a3d38a8623290b9d0a89306036e1c53b4",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="hash",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$trace__hashtable_8c.html#a89cded44d5106ffaeb0d2dab42c2d43f",tooltip=" "];
+  Node3 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ipv4_address",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$nas__config_8h.html#ab3395d5cf9f94c424d4a8a340fe30187",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="to_earfcn_DL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$enb__config_8c.html#ac9220a0d6d7da8f2ee70f93aa42a5277",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="to_earfcn_UL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$enb__config_8c.html#acb33d418a23279e43ea2196a4ecb6a1d",tooltip=" "];
+}

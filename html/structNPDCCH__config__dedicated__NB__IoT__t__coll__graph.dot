@@ -1,0 +1,7 @@
+digraph "NPDCCH_config_dedicated_NB_IoT_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{NPDCCH_config_dedicated\l_NB_IoT_t\n|+ R_max\l+ G\l+ a_offset\l+ T\l+ ss_start_uss\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "eNB_STATS"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{eNB_STATS\n|+ total_num_bcch_pdu\l+ bcch_buffer\l+ total_bcch_buffer\l+ bcch_mcs\l+ total_num_ccch_pdu\l+ ccch_buffer\l+ total_ccch_buffer\l+ ccch_mcs\l+ num_dlactive_UEs\l+ available_prbs\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="eNB overall statistics"];
+}

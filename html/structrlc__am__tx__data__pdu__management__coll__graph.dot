@@ -1,0 +1,12 @@
+digraph "rlc_am_tx_data_pdu_management"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_am_tx_data_pdu\l_management\n|+ first_byte\l+ payload\l+ sdus_index\l+ last_nack_time\l+ hole_so_start\l+ hole_so_stop\l+ num_holes\l+ retx_hole_index\l+ header_and_payload_size\l+ payload_size\land 7 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +flags" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +mem_block" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{mem_block_t\n|+ size\l+ pool_id\l+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmem__block__t.html",tooltip=" "];
+  Node2 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +next\n+previous" ,arrowhead="odiamond",fontname="Helvetica"];
+}

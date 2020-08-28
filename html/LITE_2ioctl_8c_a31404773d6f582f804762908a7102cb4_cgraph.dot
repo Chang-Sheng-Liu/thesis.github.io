@@ -1,0 +1,10 @@
+digraph "oai_nw_drv_ioCTL_statistic_request"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="oai_nw_drv_ioCTL_statistic\l_request",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="oai_nw_drv_set_msg\l_statistic_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$LITE_2ioctl_8c.html#a79991008be001b0f25e7a5787a6965cc",tooltip=" "];
+}

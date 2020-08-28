@@ -1,0 +1,12 @@
+digraph "assign_max_mcs_min_rb"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="assign_max_mcs_min_rb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ulsch_scheduler_pre\l_processor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9b0d9fce88877cda3f402198e12e80e1",tooltip="ULSCH PRE_PROCESSOR."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="schedule_ulsch_rnti",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2dee5c794a1e2e0b49f729119f74ffae",tooltip="ULSCH Scheduling per RNTI."];
+}

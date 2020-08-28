@@ -1,0 +1,7 @@
+digraph "lfds700_misc_globals"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{lfds700_misc_globals\n|+ exponential_backoff\l_timeslot_length_in\l_loop_iterations_for_cas\l+ exponential_backoff\l_timeslot_length_in\l_loop_iterations_for_dwcas\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

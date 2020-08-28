@@ -1,0 +1,7 @@
+digraph "mobility_struct"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mobility_struct\n|+ x_from\l+ y_from\l+ x_to\l+ y_to\l+ speed\l+ sleep_duration\l+ azimuth\l+ journey_time\l+ start_journey\l+ target_time\l+ target_speed\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

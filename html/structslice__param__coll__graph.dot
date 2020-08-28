@@ -1,0 +1,7 @@
+digraph "slice_param"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{slice_param\n|+ current_nb_slice\l+ finished\l+ slice_count\l+ ul_current_nb_slice\l+ ul_finished\l+ ul_slice_count\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

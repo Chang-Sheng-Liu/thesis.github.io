@@ -1,0 +1,7 @@
+digraph "RA_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RA_t\n|+ state\l+ preamble_subframe\l+ Msg2_subframe\l+ Msg2_frame\l+ Msg3_subframe\l+ Msg3_frame\l+ Msg4_delay_cnt\l+ Msg4_subframe\l+ Msg4_frame\l+ harq_pid\land 25 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="eNB template for the Random access information"];
+}

@@ -1,0 +1,15 @@
+digraph "PDCP"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="PDCP",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="openair2 Reference\l Implementation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____oai2.html",tooltip=" "];
+  Node5 [label="RRC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html",tooltip=" "];
+  Node3 [label="\>mac_rlc_primitives\l\</em\> MAC Layer Primitives\l for Communications with RLC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html",tooltip=" "];
+  Node4 [label="MAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html",tooltip=" "];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, label="__attribute__", color="orange", dir="none", style="dashed"];
+  Node1->Node4 [shape=plaintext, label="__attribute__", color="orange", dir="none", style="dashed"];
+  Node1->Node5 [shape=plaintext, label="__attribute__", color="orange", dir="none", style="dashed"];
+}

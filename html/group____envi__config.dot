@@ -1,0 +1,13 @@
+digraph "Environment Configuration"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node1 [label="Environment Configuration",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Including simulation area, geography, topography, fading information, etc."];
+  Node3 [label="OAI protocol config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____OSD__basic.html",tooltip="OAI Emulation struct for protocol configuration."];
+  Node4 [label="Topology Configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____topo__config.html",tooltip="Including cell type, eNB topology, UE distribution, mobility information, etc."];
+  Node2 [label="OCG Finite State Machine\l (FSM)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enum__fsm.html",tooltip="See the flow chart for details."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node3->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

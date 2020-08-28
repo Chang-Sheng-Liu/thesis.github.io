@@ -1,0 +1,21 @@
+digraph "handle_ulsch"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="handle_ulsch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UL_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a0e2ef22a02b2c6683ab06f6d53f92e4d",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="IF_Module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a889f718a2d163ae240f8aa0732d35a81",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gafd8182cd803334f6a7df61898dc81389",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

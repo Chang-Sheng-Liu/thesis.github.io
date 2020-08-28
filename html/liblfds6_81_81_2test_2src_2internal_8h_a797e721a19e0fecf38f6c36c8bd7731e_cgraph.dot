@@ -1,0 +1,33 @@
+digraph "ringbuffer_test_thread_simple_writer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ringbuffer_test_thread\l_simple_writer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds611_freelist_set\l_user_data_in_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a30bde3ac5f56e3c21a4bf584e8461b26",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lfds611_ringbuffer\l_get_write_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a94bedc8822fcf227d9152b6040d47dd5",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lfds611_freelist_pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a553d79ea0648f758e195ff7765656c93",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="lfds611_ringbuffer\l_get_read_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__ringbuffer__get__and__put_8c.html#a598a3b777029aa65dbc63ce0388be887",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="lfds611_queue_dequeue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a53e4f247849f5651975a2a6ed937cf53",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="lfds611_ringbuffer\l_put_write_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a78507247df9025c960f8fc2c405a6a7a",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="lfds611_queue_enqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#aa9b6ae4f2255f9215935777fce30fcfa",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="lfds611_queue_internal\l_new_element_from_freelist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__queue__internal_8h.html#acb38ffdf225bfaee688acc3eaf5b807d",tooltip=" "];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="lfds611_queue_internal\l_init_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__queue__new_8c.html#ad7a12395955aea1b7436208dfbc98366",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="lfds611_freelist_get\l_user_data_from_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a6b5836f54710e3591e4198a627423637",tooltip=" "];
+  Node8 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="lfds611_queue_internal\l_queue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__queue__queue_8c.html#a329395e12926b84556b015f06542156f",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="lfds611_ringbuffer_use",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a134be5e5c02971fa9a0dc92f79f9c8f6",tooltip=" "];
+}

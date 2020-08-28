@@ -1,0 +1,43 @@
+digraph "getRIV"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="getRIV",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="check_Msg4_retransmission",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__RA_8c.html#a1ed5e4d0da1265b2ffad9afe5e4b80df",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="schedule_RA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9fced5fac952bd5b3f37c136509d1f2d",tooltip="First stage of Random-Access Scheduling. Loops over the ras and checks if RAR, Msg3 or its retransmis..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="eNB_dlsch_ulsch_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2a3ebd99050898af5b0f5ff9c9785897",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UL_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a0e2ef22a02b2c6683ab06f6d53f92e4d",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="IF_Module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$IF__Module_8h.html#a889f718a2d163ae240f8aa0732d35a81",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gaf0a0b784f891b689029fdac80981bb48",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="read_config_and_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gafd8182cd803334f6a7df61898dc81389",tooltip=" "];
+  Node7 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="RCconfig_macrlc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____enb__app.html#gad938d81629b25898f7beb6f9c854846b",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="schedule_PCH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga315f527307d1f3b4802ebc51a0e00d5f",tooltip="First stage of PCH Scheduling. Gets a PCH SDU from RRC if available and computes the MCS required to ..."];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="schedule_SI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga89cfae638deeee04f4f6f472029d31e5",tooltip="First stage of SI Scheduling. Gets a SI SDU from RRC if available and computes the MCS required to tr..."];
+  Node12 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="schedule_SI_BR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__bch_8c.html#a2872f8d1780e7fad27c2bd1c8f3f9d04",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="schedule_SI_MBMS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga1d71ca94c027ca34e03e7594cc060829",tooltip="First stage of SI Scheduling. Gets a SI SDU from RRC if available and computes the MCS required to tr..."];
+  Node1 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="schedule_SIB1_BR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__bch_8c.html#a77972fe70c3db20c88f0636e0b4c961d",tooltip=" "];
+  Node15 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="schedule_SIB1_MBMS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__bch_8c.html#aa2fc0ff934066b2c31e018777350f3e4",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "cleanup_module"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="cleanup_module",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ue_ip_netlink_release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gad88ef2c2901ceb3535adc41d2ffd4c7b",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ue_ip_teardown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UE__IP_2device_8c.html#a0d1cf8d47e6807004caa44bd97d0ea95",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_ip_find_inst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga0d9c0b2f1edb3217c1299f33ab0b03f4",tooltip="This function determines the instance id for a particular device pointer."];
+}

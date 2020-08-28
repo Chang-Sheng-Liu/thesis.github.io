@@ -1,0 +1,14 @@
+digraph "flexran_get_p0_nominal_pucch"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="flexran_get_p0_nominal\l_pucch",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_mac_stats\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__mac_8h.html#ad20d94c04194d76e13adab7f2a07b0f0",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_agent_stats\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__handler_8c.html#a5d243d6bde0840630abc819d19bd4778",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_agent_handle\l_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__handler_8c.html#a43c9a5dc096691280f076b3867c03464",tooltip=" "];
+}

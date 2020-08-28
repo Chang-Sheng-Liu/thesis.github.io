@@ -1,0 +1,9 @@
+digraph "f1ap_setup_req_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{f1ap_setup_req_s\n|+ cnx_id\l+ assoc_id\l+ sctp_in_streams\l+ sctp_out_streams\l+ default_sctp_stream_id\l+ gNB_DU_id\l+ gNB_DU_name\l+ cell_type\l+ num_cells_available\l+ tac\land 41 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +CU_f1_ip_address\n+DU_f1_ip_address\n+fdd\n+tdd" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

@@ -1,0 +1,7 @@
+digraph "AGENT_MAC_xface"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{AGENT_MAC_xface\n|+ flexran_agent_send\l_sr_info\l+ flexran_agent_send\l_sf_trigger\l+ flexran_agent_get_pending\l_dl_mac_config\l+ dl_scheduler_loaded_lib\l+ ul_scheduler_loaded_lib\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

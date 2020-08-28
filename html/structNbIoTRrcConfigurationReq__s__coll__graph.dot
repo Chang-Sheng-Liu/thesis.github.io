@@ -1,0 +1,7 @@
+digraph "NbIoTRrcConfigurationReq_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{NbIoTRrcConfigurationReq_s\n|+ cell_identity\l+ tac\l+ mcc\l+ mnc\l+ mnc_digit_length\l+ frame_type\l+ tdd_config\l+ tdd_config_s\l+ prefix_type\l+ prefix_type_UL\land 45 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

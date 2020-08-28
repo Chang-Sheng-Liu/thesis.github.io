@@ -1,0 +1,12 @@
+digraph "rrc_data_req_ue"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rrc_data_req_ue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rrc_ue_generate_Sidelink\lUEInformation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#aafcff24db800ced4659da63e4c5bf53d",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rrc_ue_process_ueCapability\lEnquiry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#af525bcbf72f7de8ae0ae726216869881",tooltip=" "];
+}

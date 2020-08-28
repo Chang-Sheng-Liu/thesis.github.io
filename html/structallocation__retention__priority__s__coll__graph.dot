@@ -1,0 +1,7 @@
+digraph "allocation_retention_priority_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{allocation_retention\l_priority_s\n|+ priority_level\l+ pre_emp_capability\l+ pre_emp_vulnerability\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

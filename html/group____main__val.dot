@@ -1,0 +1,11 @@
+digraph "Main Variables"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node3 [label="OCG Module State Indicators",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____oks.html",tooltip="Indicate whether a module has processed successfully."];
+  Node2 [label="OpenAir Config Generation\l (OCG)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____OCG.html",tooltip=" "];
+  Node1 [label="Main Variables",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Variables used by the main function."];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+}

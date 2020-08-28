@@ -1,0 +1,22 @@
+digraph "read_total_rlc_buffer_size_of_slice"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="read_total_rlc_buffer\l_size_of_slice",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="本函式是協助get_nb_slice_required_rb_dl(）取得RLC buffer status 的函式."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mac_rlc_status_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab02bd6cca3f46350ea44e5afbd3282da",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_am_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga15180e8939fdaa3460571097725529d1",tooltip="Request the maximum number of bytes that can be served by RLC instance to MAC and fix the amount of b..."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rlc_tm_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab2b184fc692c5735e92172c469508824",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rlc_um_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga081443f7a65ddc28f9a462ea0c8a5e93",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ue_dl_slice_membership",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9648413305f4341d12713a15b8e62916",tooltip="本函式負責DＬ slice 的 ue_list篩選，根據輸入的UE_id 與 slice id 做判斷, 若此ＵＥ屬於輸入的這個slice id 則return true,..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="UE_PCCID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga63d612e6b94450ff40406b999ab25448",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+}

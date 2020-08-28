@@ -1,0 +1,21 @@
+digraph "eNB_Mobility"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{eNB_Mobility\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +trace_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Trace_Configuration\n|+ trace_mobility_file\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTrace__Configuration.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +grid_eNB_distribution" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{Grid_eNB_Distribution\n|+ number_of_grid_x\l+ number_of_grid_y\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structGrid__eNB__Distribution.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +hexagonal_eNB_distribution" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{Hexagonal_eNB_Distribution\n|+ number_of_cells\l+ inter_eNB_distance_km\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structHexagonal__eNB__Distribution.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +fixed_eNB_distribution" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{Fixed_eNB_Distribution\n|+ pos_x\l+ pos_y\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structFixed__eNB__Distribution.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +eNB_initial_distribution" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{eNB_Initial_Distribution\n|+ selected_option\l+ random\l+ hexagonal\l+ grid\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__Initial__Distribution.html",tooltip=" "];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +eNB_mobility_type" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{eNB_Mobility_Type\n|+ selected_option\l+ fixed\l+ mobile\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__Mobility__Type.html",tooltip=" "];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +random_eNB_distribution" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{Random_eNB_Distribution\n|+ number_of_cells\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRandom__eNB__Distribution.html",tooltip=" "];
+}

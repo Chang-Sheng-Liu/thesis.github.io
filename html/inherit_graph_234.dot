@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="mac_rlc_status_resp_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmac__rlc__status__resp__t.html",tooltip="Primitive exchanged between RLC and MAC informing about the buffer occupancy of the RLC protocol inst..."];
+}

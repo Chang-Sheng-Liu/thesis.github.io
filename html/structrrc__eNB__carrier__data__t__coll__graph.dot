@@ -1,0 +1,9 @@
+digraph "rrc_eNB_carrier_data_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rrc_eNB_carrier_data_t\n|+ MIB\l+ sizeof_MIB\l+ SIB1\l+ sizeof_SIB1\l+ SIB23\l+ sizeof_SIB23\l+ SIB1_BR\l+ sizeof_SIB1_BR\l+ SIB23_BR\l+ sizeof_SIB23_BR\land 42 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +MCCH_MESS\n+SI" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

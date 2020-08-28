@@ -1,0 +1,7 @@
+digraph "flexran_agent_info_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{flexran_agent_info_t\n|+ enabled\l+ interface_name\l+ remote_ipv4_addr\l+ remote_port\l+ cache_name\l+ mod_id\l+ cond_node_ctrl\l+ mutex_node_ctrl\l+ node_ctrl_state\l+ total_rx_msg\l+ total_tx_msg\l+ rx_msg\l+ tx_msg\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

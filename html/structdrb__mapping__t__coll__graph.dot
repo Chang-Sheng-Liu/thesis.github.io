@@ -1,0 +1,7 @@
+digraph "drb_mapping_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{drb_mapping_t\n|+ ueid\l+ drbid\l+ lcid_present\l+ lcid\l+ rlcMode_present\l+ rlcMode\l+ rlc_ul_ext_li_field\l+ rlc_dl_ext_li_field\l+ rlc_ul_ext_am_sn\l+ rlc_dl_ext_am_sn\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,11 @@
+digraph "LAYER2/RLC/UM_v9.3.0/rlc_um_very_simple_test.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="LAYER2/RLC/UM_v9.3.0\l/rlc_um_very_simple_test.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="This file defines the prototypes of the functions dealing with the sending of self generated packet f..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LAYER2/RLC/UM_v9.3.0\l/rlc_um.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__um_8c.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LAYER2/RLC/UM_v9.3.0\l/rlc_um_very_simple_test.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__um__very__simple__test_8c.html",tooltip=" "];
+}

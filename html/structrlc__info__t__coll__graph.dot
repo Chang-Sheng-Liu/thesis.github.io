@@ -1,0 +1,13 @@
+digraph "rlc_info_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{rlc_info_t\n|+ rlc_mode\l+ rlc\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Structure containing RLC protocol configuration parameters."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +rlc_am_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{rlc_am_info_t\n|+ max_retx_threshold\l+ poll_pdu\l+ poll_byte\l+ t_poll_retransmit\l+ t_reordering\l+ t_status_prohibit\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrlc__am__info__t.html",tooltip="Structure containing RLC AM configuration parameters."];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +rlc_tm_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +rlc_um_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{rlc_um_info_t\n|+ is_uplink_downlink\l+ timer_reordering\l+ sn_field_length\l+ is_mXch\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrlc__um__info__t.html",tooltip=" "];
+}

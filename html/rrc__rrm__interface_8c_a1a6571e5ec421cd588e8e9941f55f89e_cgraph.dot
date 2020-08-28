@@ -1,0 +1,10 @@
+digraph "send_msg"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="send_msg",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="send_msg_sock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__rrm__interface_8c.html#aba0877bd2df2f636f4146561b3ab2b89",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "ccparams_sidelink_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ccparams_sidelink_s\n|+ sidelink_configured\l+ rxPool_sc_CP_Len\l+ rxPool_sc_Period\l+ rxPool_data_CP_Len\l+ rxPool_ResourceConfig\l_prb_Num\l+ rxPool_ResourceConfig\l_prb_Start\l+ rxPool_ResourceConfig\l_prb_End\l+ rxPool_ResourceConfig\l_offsetIndicator_present\l+ rxPool_ResourceConfig\l_offsetIndicator_choice\l+ rxPool_ResourceConfig\l_subframeBitmap_present\land 29 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,10 @@
+digraph "CommunicationThread::CommunicationThread"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CommunicationThread\l::CommunicationThread",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="MyWindow::getGL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyWindow.html#a291d7e85a9015f512740dfcc85d6a7a2",tooltip=" "];
+}

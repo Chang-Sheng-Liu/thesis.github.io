@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['background_5fnum_5factive_5fmax_20760',['BACKGROUND_NUM_ACTIVE_MAX',['../otg__defs_8h.html#a7d67b42b22ddb2c7a5039f451abc21ac',1,'otg_defs.h']]],
+  ['background_5frate_5fmax_20761',['BACKGROUND_RATE_MAX',['../otg__defs_8h.html#a42a8394bb8c42307dcabcf8bf0316dea',1,'otg_defs.h']]],
+  ['bandtable_5fsize_20762',['BANDTABLE_SIZE',['../config_8c.html#a70a50265e7314e4390e73b8c3e4611a7',1,'config.c']]],
+  ['bcch_20763',['BCCH',['../LAYER2_2MAC_2defs__NB__IoT_8h.html#ad4dc5966d747dbb265622f4effa37359',1,'defs_NB_IoT.h']]],
+  ['bcch0_5fnb_5fiot_20764',['BCCH0_NB_IoT',['../LAYER2_2MAC_2defs__NB__IoT_8h.html#a71208b47ad51071c6e0271aeebb1bac5',1,'defs_NB_IoT.h']]],
+  ['bcch1_5fnb_5fiot_20765',['BCCH1_NB_IoT',['../LAYER2_2MAC_2defs__NB__IoT_8h.html#ae827e739cd4e46c41c3356fc71cf8d02',1,'defs_NB_IoT.h']]],
+  ['bcch_5fmodificationperiodcoeff_5fnb_5fmodvalues_20766',['BCCH_MODIFICATIONPERIODCOEFF_NB_MODVALUES',['../NB__IoT__paramdef_8h.html#a13709459dfa44960f52cbb1b6019b499',1,'NB_IoT_paramdef.h']]],
+  ['bcch_5fmodificationperiodcoeff_5fnb_5fokvalues_20767',['BCCH_MODIFICATIONPERIODCOEFF_NB_OKVALUES',['../NB__IoT__paramdef_8h.html#a4d282a0b034f011781d2ef6dccd266c9',1,'NB_IoT_paramdef.h']]],
+  ['bcch_5fpayload_5fsize_5fmax_5fnb_5fiot_20768',['BCCH_PAYLOAD_SIZE_MAX_NB_IoT',['../IF__Module__NB__IoT_8h.html#a8d9ed1ff80d3110438fe9b6e16cd69c6',1,'IF_Module_NB_IoT.h']]],
+  ['bcch_5fsdu_5fmbms_5fsize_20769',['BCCH_SDU_MBMS_SIZE',['../mac__messages__types_8h.html#af15615d436d97236ae0dd44be4ce4ab2',1,'mac_messages_types.h']]],
+  ['bcch_5fsdu_5fsize_20770',['BCCH_SDU_SIZE',['../mac__messages__types_8h.html#a6bfe15d15f955cb4d2a578d9b37e2e03',1,'mac_messages_types.h']]],
+  ['bigmalloc_20771',['bigmalloc',['../openair__defs_8h.html#a52e0290c534837e68a6b94ce285d7d39',1,'openair_defs.h']]],
+  ['bigmalloc16_20772',['bigmalloc16',['../openair__defs_8h.html#afb16b344fd0e1d4e3684a3c0b1926ddc',1,'openair_defs.h']]],
+  ['bits_5fper_5fbyte_20773',['BITS_PER_BYTE',['../liblfds7_80_80_2test_2src_2internal_8h.html#a369ecd38b3ab077fc235f892354bb46f',1,'internal.h']]],
+  ['bool_5fnot_20774',['BOOL_NOT',['../commonDef_8h.html#a260fe8a260530814327d6f91399adffb',1,'BOOL_NOT():&#160;commonDef.h'],['../platform__types_8h.html#a260fe8a260530814327d6f91399adffb',1,'BOOL_NOT():&#160;platform_types.h']]],
+  ['buf_5fmax_20775',['BUF_MAX',['../cu__test_8c.html#abf940742e1b38f8100a344f9275d4086',1,'BUF_MAX():&#160;cu_test.c'],['../du__test_8c.html#abf940742e1b38f8100a344f9275d4086',1,'BUF_MAX():&#160;du_test.c']]],
+  ['buf_5fsize_20776',['BUF_SIZE',['../rb__config_8c.html#a6821bafc3c88dfb2e433a095df9940c6',1,'rb_config.c']]],
+  ['bufsize_20777',['BUFSIZE',['../rrc__defs_8h.html#aeca034f67218340ecb2261a22c2f3dcd',1,'BUFSIZE():&#160;rrc_defs.h'],['../rrc__UE_8c.html#aeca034f67218340ecb2261a22c2f3dcd',1,'BUFSIZE():&#160;rrc_UE.c']]],
+  ['build_5ftype_5fstring_20778',['BUILD_TYPE_STRING',['../liblfds700__internal_8h.html#a1406a97cc627d69962507f998470b8d4',1,'BUILD_TYPE_STRING():&#160;liblfds700_internal.h'],['../liblfds7_80_80_2test_2src_2internal_8h.html#a1406a97cc627d69962507f998470b8d4',1,'BUILD_TYPE_STRING():&#160;internal.h']]]
+];

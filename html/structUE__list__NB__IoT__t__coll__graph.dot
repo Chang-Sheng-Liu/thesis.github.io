@@ -1,0 +1,11 @@
+digraph "UE_list_NB_IoT_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_list_NB_IoT_t\n|+ head\l+ tail\l+ num_UEs\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UE list used by eNB to order UEs/CC for scheduling."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_template_NB_IoT" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{UE_TEMPLATE_NB_IoT\n|+ rnti\l+ CE_level\l+ direction\l+ R_dci\l+ R_max\l+ HARQ_round\l+ DLSCH_pdu\l+ DLSCH_pdu_size\l+ R_dl\l+ I_mcs_dl\land 12 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__TEMPLATE__NB__IoT.html",tooltip="eNB template for UE context information"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +NPDCCH_config_dedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{NPDCCH_config_dedicated\l_NB_IoT_t\n|+ R_max\l+ G\l+ a_offset\l+ T\l+ ss_start_uss\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structNPDCCH__config__dedicated__NB__IoT__t.html",tooltip=" "];
+}

@@ -1,0 +1,57 @@
+digraph "ue_get_rach"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ue_get_rach",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="generate_ulsch_header",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaadee4cb8418dde9ed744fc370d77fadc",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_Po_NOMINAL_PUSCH",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga006cf5eeb630be78d5af484e9a8365c5",tooltip="Function for UE/PHY to compute PUSCH transmit power in power-control procedure."];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="get_DELTA_PREAMBLE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab92d037aa7a105bc0910d4fb11980614",tooltip="Function to compute DELTA_PREAMBLE from 36.321 (for RA power ramping procedure and Msg3 PUSCH power c..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_prach_resources",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ra__procedures_8c.html#ab11eedad6583cd019cc9b39ef5cba12c",tooltip="This routine implements Section 5.1.2 (UE Random Access Resource Selection) from 36...."];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="taus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8h.html#a362f00415eaebca7255f9c4d08bd9fd6",tooltip="compute random number"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="get_ue_mode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ra__procedures_8c.html#ac26e9e4c24e4264958be0b79f70a8df7",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="locate_BsrIndexByBufferSize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga4dab46b3b19835e358e4cf603f04a79f",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mac_rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga5bde199cb9915e86997f39fc5539065e",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="mac_rlc_serialize_tb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga193605f70003c8515ed9f022cfac2015",tooltip="Serialize a list of transport blocks coming from RLC in order to be processed by MAC."];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+  Node10 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="rlc_util_print_hex\l_octets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga9080083e27a8fc3d61451b6d4d7c8f3b",tooltip=" "];
+  Node9 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="rlc_am_mac_data_request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga6f2739955f3e6abe518d31824876ca98",tooltip="Gives PDUs to lower layer MAC."];
+  Node9 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rlc_am_set_nb_bytes\l_requested_by_mac",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab6b2d96761351ad26b7334b15994a671",tooltip="Set available TBS for RLC Tx just before am_mac_data_request. Used for UE only."];
+  Node9 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="rlc_tm_mac_data_request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga26c5517f197b5c01886d841c506e6c96",tooltip="Gives PDUs to lower layer MAC."];
+  Node9 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="rlc_um_mac_data_request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga8ba463e8b0085109257c0b4665821295",tooltip=" "];
+  Node9 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="rlc_um_set_nb_bytes\l_requested_by_mac",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga1c496e79d4408b04297c4518771096f0",tooltip=" "];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="mac_rlc_status_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab02bd6cca3f46350ea44e5afbd3282da",tooltip=" "];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="rlc_am_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga15180e8939fdaa3460571097725529d1",tooltip="Request the maximum number of bytes that can be served by RLC instance to MAC and fix the amount of b..."];
+  Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="rlc_tm_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gab2b184fc692c5735e92172c469508824",tooltip=" "];
+  Node19 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="rlc_um_mac_status_indication",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga081443f7a65ddc28f9a462ea0c8a5e93",tooltip=" "];
+  Node1 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="mac_rrc_data_req_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga5c85ce9947dc816c418b9df12c76122b",tooltip=" "];
+  Node1 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="update_bsr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaddd0ec59a529e99f88eeb2d10e4278a9",tooltip=" "];
+  Node24 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,24 @@
+digraph "UTIL/LFDS/liblfds7.0.0/liblfds700/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_325e01d27f86c8d9d9d5b4f6165b75ed {
+    graph [ bgcolor="#ddddee", pencolor="black", label="liblfds700" fontname="Helvetica", fontsize="10", URL="dir_325e01d27f86c8d9d9d5b4f6165b75ed.html"]
+  subgraph clusterdir_357ec3224bf964ccbdf4f70e73c43815 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_357ec3224bf964ccbdf4f70e73c43815.html"];
+    dir_357ec3224bf964ccbdf4f70e73c43815 [shape=plaintext label="src"];
+    dir_e64ce08a8a9f93862315431a9db82490 [shape=box label="lfds700_btree_addonly_unbalanced" color="black" fillcolor="white" style="filled" URL="dir_e64ce08a8a9f93862315431a9db82490.html"];
+    dir_beaf6aa2e805f11fdb20913ba06eec98 [shape=box label="lfds700_freelist" color="black" fillcolor="white" style="filled" URL="dir_beaf6aa2e805f11fdb20913ba06eec98.html"];
+    dir_8524e594dc86e600dc4e46a8c1d2cb1d [shape=box label="lfds700_hash_addonly" color="black" fillcolor="white" style="filled" URL="dir_8524e594dc86e600dc4e46a8c1d2cb1d.html"];
+    dir_9282b85b65bc4aeea4b59de560e16bf1 [shape=box label="lfds700_list_addonly_ordered_singlylinked" color="black" fillcolor="white" style="filled" URL="dir_9282b85b65bc4aeea4b59de560e16bf1.html"];
+    dir_1c8b2fed26ed1cc77286570ac71a5ca7 [shape=box label="lfds700_list_addonly_singlylinked_unordered" color="black" fillcolor="white" style="filled" URL="dir_1c8b2fed26ed1cc77286570ac71a5ca7.html"];
+    dir_a88f2e7fc3a8908027b724f7c649c2e0 [shape=box label="lfds700_misc" color="black" fillcolor="white" style="filled" URL="dir_a88f2e7fc3a8908027b724f7c649c2e0.html"];
+    dir_c38aeb2cd667c85f3aade00834a6bd54 [shape=box label="lfds700_queue" color="black" fillcolor="white" style="filled" URL="dir_c38aeb2cd667c85f3aade00834a6bd54.html"];
+    dir_469544bd87d2e7d7ab33212066e1df6a [shape=box label="lfds700_queue_bounded_singleconsumer_singleproducer" color="black" fillcolor="white" style="filled" URL="dir_469544bd87d2e7d7ab33212066e1df6a.html"];
+    dir_60fb9893782faf4b4ca4abcf9a011d61 [shape=box label="lfds700_ringbuffer" color="black" fillcolor="white" style="filled" URL="dir_60fb9893782faf4b4ca4abcf9a011d61.html"];
+    dir_3adaf8e62e116db8c0961e0446c334ad [shape=box label="lfds700_stack" color="black" fillcolor="white" style="filled" URL="dir_3adaf8e62e116db8c0961e0446c334ad.html"];
+  }
+  }
+  dir_15f32090ba7a381f51992ee363a59951 [shape=box label="inc" fillcolor="white" style="filled" color="red" URL="dir_15f32090ba7a381f51992ee363a59951.html"];
+  dir_357ec3224bf964ccbdf4f70e73c43815->dir_15f32090ba7a381f51992ee363a59951 [headlabel="1", labeldistance=1.5 headhref="dir_000070_000068.html"];
+}

@@ -1,0 +1,14 @@
+digraph "nas_set_msg_rb_establishment_reply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="nas_set_msg_rb_establishment\l_reply",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nas_COMMON_add_rb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gad5147ca128f4974a1ccdd095eca390b3",tooltip="Add a radio-bearer descriptor."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nas_COMMON_search_rb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga06c84e5c4619b3d814e417911827924f",tooltip="Search for a radio-bearer entity for a particular connection and radio-bearer index."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="nas_COMMON_search_cx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gad7bb91029cc3863a4e08478b275cd892",tooltip="Search for a connection entity based on its index and pointer to nas_priv."];
+}

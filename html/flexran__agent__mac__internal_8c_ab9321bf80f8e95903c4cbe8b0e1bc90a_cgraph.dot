@@ -1,0 +1,22 @@
+digraph "apply_ue_slice_assoc_update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="apply_ue_slice_assoc\l_update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="find_UE_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga35a30760cd6df3d2fcadef04c55d66ea",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_dl_slice_exists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a7655cbf0aeb245faa659bcfbd1159712",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_find_dl_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a0a7a002fa8ff5f0b3b37027898a2c252",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="flexran_find_ul_slice",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a92a4d115e3b391bc33d51018df8a3b78",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="flexran_set_ue_dl_slice_idx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a1fa741f6be4f6108f99cacfca49a62ef",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="flexran_set_ue_ul_slice_idx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a48dce39073d9da74ace515edd15d0638",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="flexran_ul_slice_exists",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#afa4103638f229597ea2cded2b5d36c66",tooltip=" "];
+}

@@ -1,0 +1,26 @@
+digraph "f1ap_get_du_ue_f1ap_id"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="f1ap_get_du_ue_f1ap_id",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CU_send_DL_RRC_MESSAGE\l_TRANSFER",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__cu__rrc__message__transfer_8h.html#afba97e073300405c03a922b03d2bb043",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="F1AP_CU_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__cu__task_8h.html#a0383570bfaf226e5df424904480e7399",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CU_send_UE_CONTEXT\l_RELEASE_COMMAND",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__cu__ue__context__management_8h.html#ad5a3d08d08a29763c401f14071698984",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DU_send_UE_CONTEXT\l_RELEASE_COMPLETE",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__ue__context__management_8h.html#ad1c0cbf0cd9d67aae4c8efdc89cdfee4",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DU_handle_UE_CONTEXT\l_RELEASE_COMMAND",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__ue__context__management_8h.html#ab84c4078987a6de0b9f32a831f58c38a",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="DU_send_UE_CONTEXT\l_RELEASE_REQUEST",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__ue__context__management_8h.html#a9e3edc92faca778bed9f034b42e3bab7",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="F1AP_DU_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__task_8h.html#a179d85615869309ee3cb39981c12aa53",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="DU_send_UL_RRC_MESSAGE\l_TRANSFER",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__rrc__message__transfer_8h.html#ad800ced4af2d18bc7a9081d8fcbdeb01",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

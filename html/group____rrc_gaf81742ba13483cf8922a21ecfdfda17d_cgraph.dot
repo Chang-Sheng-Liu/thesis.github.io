@@ -1,0 +1,18 @@
+digraph "rrc_eNB_process_handoverPreparationInformation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rrc_eNB_process_handover\lPreparationInformation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rrc_eNB_allocate_new\l_UE_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#ae50fcc550622acf95507d021e64866c0",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="uid_linear_allocator_new",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a3da088e4354b184de804b3d1bc7fe94b",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rrc_eNB_get_ue_context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__UE__context_8c.html#a746860031d13c8ab30390dc0e7685e9f",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rrc_eNB_process_X2AP\l_TUNNEL_SETUP_REQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__S1AP_8c.html#a4bbcc1e49bca846355380de5b08a4c5d",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="taus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$oml_8h.html#a362f00415eaebca7255f9c4d08bd9fd6",tooltip="compute random number"];
+}

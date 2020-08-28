@@ -1,0 +1,30 @@
+digraph "ulsch_scheduler_pre_processor_fairRR"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ulsch_scheduler_pre\l_processor_fairRR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="find_rb_table_index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaea64c4a61cdf25c25accbec8838d6dc7",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mac_eNB_get_rrc_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga924d14199b132512e86d4fec21b50253",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="ulsch_scheduler_pre\l_ue_select_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#a40fe32e5a8c40cf65225546cecf6993e",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="cc_id_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#ae4768777de95df62e7fc09d3f6415c96",tooltip=" "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="CCE_allocation_infeasible",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga08091f59e46cc6cbe9eac747d19517e6",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="get_aggregation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga4c2fbdb0dfe9c6eb3eea73322800e767",tooltip=" "];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="get_bw_index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga90192a5bf0a35e59da30cc67f2d17d33",tooltip=" "];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="subframe2harqpid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab50114bec770935c2cfd4c57407bdcbf",tooltip=" "];
+  Node5 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="UE_PCCID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga63d612e6b94450ff40406b999ab25448",tooltip=" "];
+  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

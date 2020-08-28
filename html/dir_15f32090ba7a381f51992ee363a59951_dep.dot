@@ -1,0 +1,14 @@
+digraph "UTIL/LFDS/liblfds7.0.0/liblfds700/inc" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_325e01d27f86c8d9d9d5b4f6165b75ed {
+    graph [ bgcolor="#ddddee", pencolor="black", label="liblfds700" fontname="Helvetica", fontsize="10", URL="dir_325e01d27f86c8d9d9d5b4f6165b75ed.html"]
+  subgraph clusterdir_15f32090ba7a381f51992ee363a59951 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_15f32090ba7a381f51992ee363a59951.html"];
+    dir_15f32090ba7a381f51992ee363a59951 [shape=plaintext label="inc"];
+    dir_8b6734e1a180f31f645dd813fd8c0c88 [shape=box label="liblfds700" color="black" fillcolor="white" style="filled" URL="dir_8b6734e1a180f31f645dd813fd8c0c88.html"];
+  }
+  }
+  dir_15f32090ba7a381f51992ee363a59951->dir_8b6734e1a180f31f645dd813fd8c0c88 [headlabel="13", labeldistance=1.5 headhref="dir_000068_000069.html"];
+}

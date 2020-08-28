@@ -1,0 +1,56 @@
+digraph "schedule_ulsch_fairRR"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="schedule_ulsch_fairRR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="schedule_ulsch_rnti\l_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#aa934d69ee1837d4678ccbf53c0d67ca2",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="add_subframe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#a309a9f944d0482f6ac7bbf52c3cca4b5",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="add_ue_ulsch_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga19f1ad54e9af511431bfbdad27ce833a",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="fill_nfapi_ulsch_config\l_request_emtc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gace5a836812104e2f53a1434f8a0508cd",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="fill_nfapi_ulsch_config\l_request_rel8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga326dab2194640b7a93927f0f550f3ba3",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="fill_nfapi_ulsch_harq\l_information",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga24528a99ff4caefeb7956eab43040181",tooltip=" "];
+  Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="get_aggregation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga4c2fbdb0dfe9c6eb3eea73322800e767",tooltip=" "];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="get_bw_index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga90192a5bf0a35e59da30cc67f2d17d33",tooltip=" "];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="get_tmode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabda3f675c9ac309af6cc662ef486752a",tooltip=" "];
+  Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="mac_eNB_get_rrc_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga924d14199b132512e86d4fec21b50253",tooltip=" "];
+  Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="sfnsf_add_subframe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#aa29bf5c4b02fce76f1eded1af219a2ee",tooltip=" "];
+  Node2 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="subframe2harqpid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab50114bec770935c2cfd4c57407bdcbf",tooltip=" "];
+  Node2 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="ulsch_scheduler_pre\l_processor_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#a1cfa9842d926e1daebfaca5b21689f08",tooltip=" "];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="find_rb_table_index",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaea64c4a61cdf25c25accbec8838d6dc7",tooltip=" "];
+  Node16 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="ulsch_scheduler_pre\l_ue_select_fairRR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#a40fe32e5a8c40cf65225546cecf6993e",tooltip=" "];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="cc_id_end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html#ae4768777de95df62e7fc09d3f6415c96",tooltip=" "];
+  Node18 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="CCE_allocation_infeasible",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga08091f59e46cc6cbe9eac747d19517e6",tooltip=" "];
+  Node18 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="UE_PCCID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga63d612e6b94450ff40406b999ab25448",tooltip=" "];
+  Node18 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

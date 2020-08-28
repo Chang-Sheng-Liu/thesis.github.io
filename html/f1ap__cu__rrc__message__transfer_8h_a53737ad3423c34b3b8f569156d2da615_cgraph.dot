@@ -1,0 +1,10 @@
+digraph "CU_handle_INITIAL_UL_RRC_MESSAGE_TRANSFER"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CU_handle_INITIAL_UL\l_RRC_MESSAGE_TRANSFER",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="f1ap_add_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a9191a13911f7bca2beb79cf41826ab9e",tooltip=" "];
+}

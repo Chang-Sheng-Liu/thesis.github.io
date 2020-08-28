@@ -1,0 +1,7 @@
+digraph "extra_phyConfig_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{extra_phyConfig_t\n|+ nprach_config_0_subcarrier\l_MSG3_range_start\l+ nprach_config_1_subcarrier\l_MSG3_range_start\l+ nprach_config_2_subcarrier\l_MSG3_range_start\l+ nprach_config_0_max\l_num_preamble_attempt_CE\l+ nprach_config_1_max\l_num_preamble_attempt_CE\l+ nprach_config_2_max\l_num_preamble_attempt_CE\l+ nprach_config_0_npdcch\l_num_repetitions_RA\l+ nprach_config_1_npdcch\l_num_repetitions_RA\l+ nprach_config_2_npdcch\l_num_repetitions_RA\l+ nprach_config_0_npdcch\l_startSF_CSS_RA\land 12 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

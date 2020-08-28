@@ -1,0 +1,7 @@
+digraph "ccparams_lte_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ccparams_lte_s\n|+ frame_type\l+ tdd_config\l+ tdd_config_s\l+ prefix_type\l+ pbch_repetition\l+ eutra_band\l+ downlink_frequency\l+ uplink_frequency_offset\l+ Nid_cell\l+ Nid_cell_mbsfn\land 76 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

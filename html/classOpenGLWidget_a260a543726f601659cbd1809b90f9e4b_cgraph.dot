@@ -1,0 +1,20 @@
+digraph "OpenGLWidget::paintGL"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="OpenGLWidget::paintGL",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="OpenGLWidget::drawConnections",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a976e200d70291b4aabb5d4db40e747db",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="OpenGLWidget::drawGrid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a8a826e3a0bde7cefb244eb06c9138ef7",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="drawMeter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$openglwidget_8cpp.html#aa600ef37bb28b68ee18ca0ad43c82405",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="OpenGLWidget::drawNodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#abfee4cb34267619c98907068d495197e",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="OpenGLWidget::drawSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a9152ff79b007a48101864691bd01281c",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="OpenGLWidget::loadTexture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOpenGLWidget.html#a77760216a025434626952eb26b543f68",tooltip=" "];
+}

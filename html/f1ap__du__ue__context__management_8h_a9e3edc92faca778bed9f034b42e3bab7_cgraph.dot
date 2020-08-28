@@ -1,0 +1,18 @@
+digraph "DU_send_UE_CONTEXT_RELEASE_REQUEST"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="DU_send_UE_CONTEXT\l_RELEASE_REQUEST",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="du_f1ap_itti_send_sctp\l_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__itti__messaging_8c.html#aefac93d9d3cf31f8e5b39050a4ecc3a2",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="f1ap_encode_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__encoder_8c.html#aeb101e0107e90201d0a11b82b3fab4b9",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2common_8c.html#a587e0ad0d0cc2677421231a08c3a614b",tooltip="Helper function to return the length of a string."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="f1ap_get_cu_ue_f1ap_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a75bccc26261d06ddfc1a754245fcb759",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="f1ap_get_du_ue_f1ap_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#a72ad50876a00a31877be538133b7754c",tooltip=" "];
+}

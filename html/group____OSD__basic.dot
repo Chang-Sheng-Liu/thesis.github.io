@@ -1,0 +1,13 @@
+digraph "OAI protocol config"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node3 [label="Environment Configuration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____envi__config.html",tooltip="Including simulation area, geography, topography, fading information, etc."];
+  Node1 [label="OAI protocol config",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="OAI Emulation struct for protocol configuration."];
+  Node2 [label="OpenAir Config Generation\l (OCG)",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____OCG.html",tooltip=" "];
+  Node4 [label="Functions in OCG",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____fn.html",tooltip="describing all the functions used by OCG"];
+  Node2->Node1 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

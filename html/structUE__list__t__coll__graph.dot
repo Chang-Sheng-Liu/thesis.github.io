@@ -1,0 +1,18 @@
+digraph "UE_list_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_list_t\n|+ DLSCH_pdu\l+ pCC_id\l+ ordered_CCids\l+ numactiveCCs\l+ ordered_ULCCids\l+ numactiveULCCs\l+ dl_CC_bitmap\l+ next\l+ head\l+ next_ul\land 8 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="UE list used by eNB to order UEs/CC for scheduling."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_sched_ctrl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{UE_sched_ctrl_t\n|+ ul_bandwidth\l+ dl_bandwidth\l+ min_ul_bandwidth\l+ min_dl_bandwidth\l+ ue_AggregatedMaximumBitrateDL\l+ ue_AggregatedMaximumBitrateUL\l+ cqiSchedInterval\l+ mac_ContentionResolution\lTimer\l+ max_rbs_allowed_slice\l+ max_rbs_allowed_slice\l_uplink\land 76 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__sched__ctrl__t.html",tooltip="scheduling control information set through an API (not used)"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +physicalConfigDedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_sched_ctrl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{UE_sched_ctrl\n|+ ul_bandwidth\l+ dl_bandwidth\l+ min_ul_bandwidth\l+ min_dl_bandwidth\l+ ue_AggregatedMaximumBitrateDL\l+ ue_AggregatedMaximumBitrateUL\l+ cqiSchedInterval\l+ mac_ContentionResolution\lTimer\l+ max_allowed_rbs\l+ max_mcs\land 46 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__sched__ctrl.html",tooltip="scheduling control information set through an API (not used)"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_template" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{UE_TEMPLATE\n|+ rnti\l+ oldNDI\l+ oldmcs1\l+ oldmcs2\l+ oldNDI_UL\l+ mcs_UL\l+ TBS_UL\l+ oldCQI_UL\l+ oldTPC_UL\l+ ul_active\land 46 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__TEMPLATE.html",tooltip="eNB template for UE context information"];
+  Node3 -> Node5 [color="grey25",fontsize="10",style="solid",label=" +physicalConfigDedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +eNB_UE_stats" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{eNB_UE_STATS\n|+ crnti\l+ rrc_status\l+ harq_pid\l+ harq_round\l+ rbs_used\l+ rbs_used_retx\l+ ncce_used\l+ ncce_used_retx\l+ dlsch_mcs1\l+ dlsch_mcs2\land 48 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__UE__STATS.html",tooltip="eNB statistics for the connected UEs"];
+}

@@ -1,0 +1,16 @@
+digraph "ue_init_mac"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ue_init_mac",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="get_db_dl_PathlossChange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga764993404bc016bcd9dfebdd10aaaa14",tooltip="get the db form the path loss change configured by the higher layer"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_sf_perioidicPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gad66af9ea051d9714c152c74168103142",tooltip="get the number of subframe form the periodic PHR timer configured by the higher layer"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="get_sf_prohibitPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga933ccf9b77944c58de0bfea4db388d95",tooltip="get the number of subframe form the prohibit PHR duration configured by the higher layer"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="uniform_rngen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga16686da47f6f375ecce38c22fa05ded7",tooltip=" "];
+}

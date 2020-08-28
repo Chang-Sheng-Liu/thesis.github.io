@@ -1,0 +1,7 @@
+digraph "oai_nw_drv_msg_statistic_reply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{oai_nw_drv_msg_statistic\l_reply\n|+ rx_packets\l+ tx_packets\l+ rx_bytes\l+ tx_bytes\l+ rx_errors\l+ tx_errors\l+ rx_dropped\l+ tx_dropped\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

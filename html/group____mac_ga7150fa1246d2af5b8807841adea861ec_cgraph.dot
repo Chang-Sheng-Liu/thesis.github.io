@@ -1,0 +1,22 @@
+digraph "schedule_ulsch_phy_test"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="schedule_ulsch_phy_test",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="add_ue_ulsch_info",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga19f1ad54e9af511431bfbdad27ce833a",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="fill_nfapi_ulsch_config\l_request_emtc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gace5a836812104e2f53a1434f8a0508cd",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="fill_nfapi_ulsch_config\l_request_rel8",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga326dab2194640b7a93927f0f550f3ba3",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="get_tmode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabda3f675c9ac309af6cc662ef486752a",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="subframe2harqpid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab50114bec770935c2cfd4c57407bdcbf",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+}

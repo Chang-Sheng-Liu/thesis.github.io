@@ -1,0 +1,15 @@
+digraph "rlc_tm_cleanup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_tm_cleanup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Free all allocated memory (lists and buffers) previously allocated by this RLC TM instance."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="list_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a73dcb25a7e97fea269a73f9179670ccf",tooltip=" "];
+  Node3 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+}

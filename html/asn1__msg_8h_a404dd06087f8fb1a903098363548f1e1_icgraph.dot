@@ -1,0 +1,14 @@
+digraph "fill_ue_capability"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="fill_ue_capability",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="openair_rrc_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga59671b160847e2e15710870123ba2be8",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="mac_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#acf142893afbda829d1b71631790e129c",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="l2_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga88b1a5dde9de1a9b6c6a3bb25e39953e",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "rlc_um_configure"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_um_configure",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Configure RLC UM protocol parameters."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_um_init_timer_reordering",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga9b22ed31ef856f3a02b9ecb0603e26b5",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rlc_um_reset_state\l_variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaa3d2b5c100e55278a47b618852faf90a",tooltip="Reset protocol variables and state variables to initial values."];
+}

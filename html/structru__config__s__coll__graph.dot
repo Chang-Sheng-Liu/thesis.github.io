@@ -1,0 +1,7 @@
+digraph "ru_config_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ru_config_s\n|+ local_rf\l+ udp\l+ raw\l+ ru_if_name\l+ local_address\l+ remote_address\l+ local_port\l+ remote_port\l+ udpif4p5\l+ rawif4p5\l+ rawif5_mobipass\l+ if_compress\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

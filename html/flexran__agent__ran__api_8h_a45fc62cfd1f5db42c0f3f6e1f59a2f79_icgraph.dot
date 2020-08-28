@@ -1,0 +1,10 @@
+digraph "flexran_get_bs_id"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="flexran_get_bs_id",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_hello",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__common_8h.html#a765db328aeaf1cfda6c6414f4c98195b",tooltip=" "];
+}

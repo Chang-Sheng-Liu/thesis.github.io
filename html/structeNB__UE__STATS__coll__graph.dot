@@ -1,0 +1,7 @@
+digraph "eNB_UE_STATS"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{eNB_UE_STATS\n|+ crnti\l+ rrc_status\l+ harq_pid\l+ harq_round\l+ rbs_used\l+ rbs_used_retx\l+ ncce_used\l+ ncce_used_retx\l+ dlsch_mcs1\l+ dlsch_mcs2\land 48 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="eNB statistics for the connected UEs"];
+}

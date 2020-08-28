@@ -1,0 +1,7 @@
+digraph "mac_tx_tb_management"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mac_tx_tb_management\n|+ data_ptr\l+ first_bit\l+ tb_size_in_bits\l+ rlc\l+ rlc_callback\l+ rlc_tb_type\l+ log_ch_interface_src\l+ mac_header\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

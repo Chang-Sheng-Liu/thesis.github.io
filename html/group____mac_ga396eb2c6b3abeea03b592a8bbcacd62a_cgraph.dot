@@ -1,0 +1,27 @@
+digraph "dlsch_scheduler_pre_processor_intraslice_sharing"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dlsch_scheduler_pre\l_processor_intraslice\l_sharing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="decode_slice_positioning",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pre__processor_8c.html#a980b3386dba6704bc6bf49326cbe1079",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dlsch_scheduler_pre\l_processor_allocate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7967f5e1d163b7ca3e02016fabaa6e23",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="get_tmode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabda3f675c9ac309af6cc662ef486752a",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="mac_eNB_get_rrc_status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga924d14199b132512e86d4fec21b50253",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="to_rbg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gae94d89d4d8082f7704d151ec4a3c67da",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ue_dl_slice_membership",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga9648413305f4341d12713a15b8e62916",tooltip="本函式負責DＬ slice 的 ue_list篩選，根據輸入的UE_id 與 slice id 做判斷, 若此ＵＥ屬於輸入的這個slice id 則return true,..."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="UE_num_active_CC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga404d11542f333701a9f2e135fa194b6b",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+}

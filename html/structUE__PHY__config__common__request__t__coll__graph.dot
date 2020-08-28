@@ -1,0 +1,27 @@
+digraph "UE_PHY_config_common_request_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_PHY_config_common\l_request_t\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_harq_msg3_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{UE_PHY_HARQ_Msg3_config_t\n|+ maxHARQ_Msg3Tx\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__HARQ__Msg3__config__t.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pdsch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UE_PHY_pdsch_config_t\n|+ referenceSignalPower\l+ p_b\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pdsch__config__t.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_tdd_frame_structure\l_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{UE_PHY_tdd_frame_structure_t\n|+ subframeAssignment\l+ specialSubframePatterns\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__tdd__frame__structure__t.html",tooltip=" "];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_ant_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{UE_PHY_antenna_config_t\n|+ nb_antennas_tx\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__antenna__config__t.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_srs_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{UE_PHY_SRS_config_t\n|+ enabled_flag\l+ srs_BandwidthConfig\l+ srs_SubframeConfig\l+ ackNackSRS_SimultaneousTransmission\l+ srs_MaxUpPts\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__SRS__config__t.html",tooltip=" "];
+  Node7 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_phich_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{UE_PHY_phich_config_t\n|+ phich_resource\l+ phich_duration\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__phich__config__t.html",tooltip=" "];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pucch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{UE_PHY_pucch_config_t\n|+ deltaPUCCH_Shift\l+ nRB_CQI\l+ nCS_AN\l+ n1PUCCH_AN\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pucch__config__t.html",tooltip=" "];
+  Node9 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_prach_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{UE_PHY_prach_config_t\n|+ rootSequenceIndex\l+ prach_Config_enabled\l+ prach_ConfigIndex\l+ highSpeedFlag\l+ zeroCorrelationZoneConfig\l+ prach_FreqOffset\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__prach__config__t.html",tooltip=" "];
+  Node10 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_pusch_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{UE_PHY_pusch_config_t\n|+ n_SB\l+ hoppingMode\l+ pusch_HoppingOffset\l+ enable64QAM\l+ groupHoppingEnabled\l+ groupAssignmentPUSCH\l+ sequenceHoppingEnabled\l+ cyclicShift\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__pusch__config__t.html",tooltip=" "];
+  Node11 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ue_ul_pow_cntl_config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{UE_PHY_UL_power_control\l_config_t\n|+ p0_NominalPUSCH\l+ alpha\l+ p0_NominalPUCCH\l+ deltaPreambleMsg3\l+ deltaF_PUCCH_Format1\l+ deltaF_PUCCH_Format1b\l+ deltaF_PUCCH_Format2\l+ deltaF_PUCCH_Format2a\l+ deltaF_PUCCH_Format2b\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__PHY__UL__power__control__config__t.html",tooltip=" "];
+}

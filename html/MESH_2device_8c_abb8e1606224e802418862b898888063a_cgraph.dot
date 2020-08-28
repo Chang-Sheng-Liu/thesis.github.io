@@ -1,0 +1,20 @@
+digraph "cleanup_module"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="cleanup_module",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nas_netlink_release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2netlink_8c.html#a7de2a99f389e7030ac0fd2d37290a02c",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nas_teardown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2device_8c.html#ab7f3c572e176eaea6b9e9efb4606dc36",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="find_inst",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga28d774e2507f48d92d653b984de1b239",tooltip="This function determines the instance id for a particular device pointer."];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="nas_CLASS_flush_rclassifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gae179c49fb533d118a437934a869ce078",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="nas_CLASS_flush_sclassifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga4d0b49dbdb2516ffddcb860291fb6ea0",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="nas_COMMON_flush_rb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga802b88f19ba0e847ccb9b04f0e4d53c3",tooltip="Clear all RB's for a particular connection."];
+}

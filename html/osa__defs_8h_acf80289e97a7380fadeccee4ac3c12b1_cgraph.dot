@@ -1,0 +1,18 @@
+digraph "stream_encrypt"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="stream_encrypt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Encrypt/Decrypt a block of data based on the provided algorithm."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="stream_encrypt_eea0",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html#a15c490414d780f62356703576297fbd1",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="stream_encrypt_eea1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html#ad1aedad66fa04a02978158156bd3620a",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="osa_snow3g_generate\l_key_stream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__snow3g_8c.html#a9c1a00f5e605b2c3a57eb2d9467c7890",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="osa_snow3g_initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__snow3g_8c.html#ac01f0ffc1384f600baa9609e7fb6db25",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="stream_encrypt_eea2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html#a39cded2adf2cc499bd48a7454ac10a0f",tooltip=" "];
+}

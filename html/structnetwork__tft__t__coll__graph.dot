@@ -1,0 +1,13 @@
+digraph "network_tft_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{network_tft_t\n|+ n_pkfs\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pkf" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{network_pkf_t\n|+ id\l+ dir\l+ precedence\l+ data\l+ lport\l+ rport\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnetwork__pkf__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +ipv4" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{network_ipv4_data_t\n|+ protocol\l+ tos\l+ addr\l+ mask\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnetwork__ipv4__data__t.html",tooltip=" "];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +ipv6" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{network_ipv6_data_t\n|+ nh\l+ tf\l+ addr\l+ mask\l+ ipsec\l+ fl\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structnetwork__ipv6__data__t.html",tooltip=" "];
+}

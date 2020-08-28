@@ -1,0 +1,8 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="rlc_am_e_li_t",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structrlc__am__e__li__t.html",tooltip="Structure helping coding and decoding LI and e bits in AMD PDUs and AMD PDU segments."];
+}

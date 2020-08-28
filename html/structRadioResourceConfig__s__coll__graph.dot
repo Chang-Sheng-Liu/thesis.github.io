@@ -1,0 +1,7 @@
+digraph "RadioResourceConfig_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RadioResourceConfig_s\n|+ prach_root\l+ prach_config_index\l+ prach_high_speed\l+ prach_zero_correlation\l+ prach_freq_offset\l+ pucch_delta_shift\l+ pucch_nRB_CQI\l+ pucch_nCS_AN\l+ pucch_n1_AN\l+ pdsch_referenceSignalPower\land 62 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "otg_multicast_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{otg_multicast_t\n|+ application_type\l+ trans_proto\l+ ip_v\l+ flow_start\l+ flow_duration\l+ idt_dist\l+ idt_min\l+ idt_max\l+ size_dist\l+ size_min\l+ size_max\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

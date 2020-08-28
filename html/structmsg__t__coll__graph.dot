@@ -1,0 +1,9 @@
+digraph "msg_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{msg_t\n|+ data\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Definition de la structure d'un message a envoyer sur un socket:"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +head" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{msg_head_t\n|+ start\l+ inst\l+ msg_type\l+ size\l+ Trans_id\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmsg__head__t.html",tooltip="Entete des messages de RRM/CMM/RRC."];
+}

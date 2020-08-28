@@ -1,0 +1,12 @@
+digraph "UE_MAC_INST"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_MAC_INST\n|+ Node_id\l+ rxFrame\l+ rxSubframe\l+ txFrame\l+ txSubframe\l+ crnti\l+ crnti_before_ho\l+ ul_active\l+ radioResourceConfigCommon\l+ rach_ConfigDedicated\land 81 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Top level UE MAC structure."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +SL_Preconfiguration\n+commSyncConfig_r12\n+commTxPoolExceptional\l_r12\n+commTxPoolNormalCommon\l_r12\n+commonSF_Alloc_r9\l_mbsfn_SubframeConfig\n+mbsfn_AreaInfo\n+mbsfn_SubframeConfig\n+non_mbsfn_SubframeConfig\n+physicalConfigDedicated\n+physicalConfigDedicatedSCell\l_r10\n..." ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +scheduling_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UE_SCHEDULING_INFO\n|+ BSR\l+ BSR_bytes\l+ LCID_buffer_remain\l+ All_lcid_buffer_size\l_lastTTI\l+ LCID_status\l+ SR_pending\l+ SR_COUNTER\l+ LCGID\l+ retxBSR_Timer\l+ retxBSR_SF\land 16 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__SCHEDULING__INFO.html",tooltip="UE scheduling info."];
+  Node2 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +drx_config\n+phr_config" ,arrowhead="odiamond",fontname="Helvetica"];
+}

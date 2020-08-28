@@ -1,0 +1,18 @@
+digraph "fill_DLSCH_dci_fairRR"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="fill_DLSCH_dci_fairRR",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="allocate_prbs_sub",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gad01a8bb717ada36e91ff132d030d43dd",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="frame_subframe2_dl\l_harq_pid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gad421ff52ee235a9a7990dccc2905b658",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="to_prb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga2ecb220c8c3fc34274ba8838c3106240",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="to_rbg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gae94d89d4d8082f7704d151ec4a3c67da",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="UE_RNTI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab1357b72b8008581c108de6f662a3ca8",tooltip=" "];
+}

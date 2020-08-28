@@ -1,0 +1,23 @@
+digraph "UTIL/OSA/osa_defs.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/OSA/osa_defs.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="LAYER2/PDCP_v10.1.0\l/pdcp.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp_8c.html",tooltip="pdcp interface with RLC"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LAYER2/PDCP_v10.1.0\l/pdcp_security.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__security_8c.html",tooltip="PDCP Security Methods."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="RRC/LTE/rrc_eNB.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB_8c.html",tooltip="rrc procedures for eNB"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RRC/LTE/rrc_eNB_S1AP.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__S1AP_8c.html",tooltip="rrc S1AP procedures for eNB"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="RRC/LTE/rrc_UE.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html",tooltip="rrc procedures for UE / rrc procedures for FeMBMS UE"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="UTIL/OSA/osa_key_deriver.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__key__deriver_8c.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="UTIL/OSA/osa_stream\l_eea.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eea_8c.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="UTIL/OSA/osa_stream\l_eia.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$osa__stream__eia_8c.html",tooltip=" "];
+}

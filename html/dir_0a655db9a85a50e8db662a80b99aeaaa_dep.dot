@@ -1,0 +1,22 @@
+digraph "UTIL/LFDS/liblfds6.1.1/liblfds611/src" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0033458faf607c867fb6ec487393d4ea {
+    graph [ bgcolor="#ddddee", pencolor="black", label="liblfds611" fontname="Helvetica", fontsize="10", URL="dir_0033458faf607c867fb6ec487393d4ea.html"]
+  subgraph clusterdir_0a655db9a85a50e8db662a80b99aeaaa {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_0a655db9a85a50e8db662a80b99aeaaa.html"];
+    dir_0a655db9a85a50e8db662a80b99aeaaa [shape=plaintext label="src"];
+    dir_378e4ba66a183db0177159584b977a20 [shape=box label="lfds611_abstraction" color="black" fillcolor="white" style="filled" URL="dir_378e4ba66a183db0177159584b977a20.html"];
+    dir_3fe99ef083070b0a3222b475855610da [shape=box label="lfds611_freelist" color="black" fillcolor="white" style="filled" URL="dir_3fe99ef083070b0a3222b475855610da.html"];
+    dir_aae5f4e2f313bf7fb2018503e9a09592 [shape=box label="lfds611_liblfds" color="black" fillcolor="white" style="filled" URL="dir_aae5f4e2f313bf7fb2018503e9a09592.html"];
+    dir_53afc6e6e46aac4fe5955aaad80b468e [shape=box label="lfds611_queue" color="black" fillcolor="white" style="filled" URL="dir_53afc6e6e46aac4fe5955aaad80b468e.html"];
+    dir_ad561009ab81922859589c75c70f2cb6 [shape=box label="lfds611_ringbuffer" color="black" fillcolor="white" style="filled" URL="dir_ad561009ab81922859589c75c70f2cb6.html"];
+    dir_f196cf33c866288eefdf92932e7b1f03 [shape=box label="lfds611_slist" color="black" fillcolor="white" style="filled" URL="dir_f196cf33c866288eefdf92932e7b1f03.html"];
+    dir_1c1cb0512670c83911b06c2ca98861b6 [shape=box label="lfds611_stack" color="black" fillcolor="white" style="filled" URL="dir_1c1cb0512670c83911b06c2ca98861b6.html"];
+  }
+  }
+  dir_86fb2d63d281e275bb46505acb19caef [shape=box label="inc" URL="dir_86fb2d63d281e275bb46505acb19caef.html"];
+  dir_0a655db9a85a50e8db662a80b99aeaaa->dir_86fb2d63d281e275bb46505acb19caef [headlabel="1", labeldistance=1.5 headhref="dir_000054_000053.html"];
+  dir_0a655db9a85a50e8db662a80b99aeaaa->dir_378e4ba66a183db0177159584b977a20 [headlabel="3", labeldistance=1.5 headhref="dir_000054_000059.html"];
+}

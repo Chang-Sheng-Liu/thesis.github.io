@@ -1,0 +1,48 @@
+digraph "eNB_MAC_INST_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{eNB_MAC_INST_s\n|+ eth_params_n\l+ eth_params_s\l+ Mod_id\l+ frame\l+ subframe\l+ pdu_index\l+ config\l+ dl_config_pdu_list\l+ DL_req\l+ ul_config_pdu_list\land 26 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="top level eNB MAC structure"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +eNB_stats" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{eNB_STATS\n|+ total_num_bcch_pdu\l+ bcch_buffer\l+ total_bcch_buffer\l+ bcch_mcs\l+ total_num_ccch_pdu\l+ ccch_buffer\l+ total_ccch_buffer\l+ ccch_mcs\l+ num_dlactive_UEs\l+ available_prbs\land 20 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__STATS.html",tooltip="eNB overall statistics"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +slice_info" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{slice_info_t\n|+ intraslice_share_active\l+ interslice_share_active\l+ n_dl\l+ n_ul\l+ rballoc_sub\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structslice__info__t.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +ul" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{slice_sched_conf_ul_t\n|+ id\l+ pct\l+ maxmcs\l+ sorting\l+ first_rb\l+ sched_name\l+ prio\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structslice__sched__conf__ul__t.html",tooltip=" "];
+  Node5 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +sched_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{frame\n|+ duration\l+ da\l+ sa\l+ body\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structframe.html",tooltip="the frame structure is ..."];
+  Node6 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +dl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{slice_sched_conf_dl_t\n|+ id\l+ pct\l+ isol\l+ prio\l+ pos_low\l+ pos_high\l+ maxmcs\l+ sorting\l+ accounting\l+ sched_name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structslice__sched__conf__dl__t.html",tooltip=" "];
+  Node5 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +sched_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +pre_processor_results" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node7 [label="{pre_processor_results_t\n|+ nb_rbs_required\l+ nb_rbs_accounted\l+ nb_rbs_remaining\l+ slice_allocation_mask\l+ MIMO_mode_indicator\l+ bytes_lcid\l+ wb_pmi\l+ mcs\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpre__processor__results__t.html",tooltip="Structure for saving the output of each pre_processor instance."];
+  Node8 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +common_channels" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node8 [label="{COMMON_channels_t\n|+ physCellId\l+ p_eNB\l+ Ncp\l+ eutra_band\l+ dl_CarrierFreq\l+ mib\l+ radioResourceConfigCommon\l+ radioResourceConfigCommon_BR\l+ tdd_Config\l+ schedulingInfoList\land 32 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structCOMMON__channels__t.html",tooltip="eNB common channels"];
+  Node9 -> Node8 [color="grey25",fontsize="10",style="solid",label=" +ra" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node9 [label="{RA_t\n|+ state\l+ preamble_subframe\l+ Msg2_subframe\l+ Msg2_frame\l+ Msg3_subframe\l+ Msg3_frame\l+ Msg4_delay_cnt\l+ Msg4_subframe\l+ Msg4_frame\l+ harq_pid\land 25 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRA__t.html",tooltip="eNB template for the Random access information"];
+  Node10 -> Node8 [color="grey25",fontsize="10",style="solid",label=" +mbms_SessionList\n+mbsfn_AreaInfo\n+mbsfn_SubframeConfig\n+non_mbsfn_SubframeConfig\n+pmch_Config" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node10 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node11 -> Node8 [color="grey25",fontsize="10",style="solid",label=" +RA_template" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node11 [label="{RA_TEMPLATE\n|+ RA_active\l+ RA_dci_size_bytes1\l+ RA_dci_size_bits1\l+ RA_alloc_pdu1\l+ RA_dci_fmt1\l+ RA_dci_size_bytes2\l+ RA_dci_size_bits2\l+ RA_alloc_pdu2\l+ RA_dci_fmt2\l+ generate_rar\land 34 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structRA__TEMPLATE.html",tooltip="eNB template for the Random access information"];
+  Node12 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_free_list" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node12 [label="{UE_free_list_t\n|+ num_UEs\l+ head_freelist\l+ tail_freelist\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__free__list__t.html",tooltip="REMOVE UE list used by eNB to order UEs/CC for deleting."];
+  Node13 -> Node12 [color="grey25",fontsize="10",style="solid",label=" +UE_free_ctrl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node13 [label="{UE_free_ctrl_t\n|+ rnti\l+ removeContextFlg\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__free__ctrl__t.html",tooltip="deleting control information"];
+  Node14 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +sbmap_conf" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node14 [label="{SBMAP_CONF\n|+ sbmap\l+ periodicity\l+ first_subframe\l+ sb_size\l+ nb_active_sb\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structSBMAP__CONF.html",tooltip="subband bitmap confguration (for ALU icic algo purpose), in test phase"];
+  Node15 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_list" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node15 [label="{UE_list_t\n|+ DLSCH_pdu\l+ pCC_id\l+ ordered_CCids\l+ numactiveCCs\l+ ordered_ULCCids\l+ numactiveULCCs\l+ dl_CC_bitmap\l+ next\l+ head\l+ next_ul\land 8 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__list__t.html",tooltip="UE list used by eNB to order UEs/CC for scheduling."];
+  Node16 -> Node15 [color="grey25",fontsize="10",style="solid",label=" +UE_sched_ctrl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node16 [label="{UE_sched_ctrl_t\n|+ ul_bandwidth\l+ dl_bandwidth\l+ min_ul_bandwidth\l+ min_dl_bandwidth\l+ ue_AggregatedMaximumBitrateDL\l+ ue_AggregatedMaximumBitrateUL\l+ cqiSchedInterval\l+ mac_ContentionResolution\lTimer\l+ max_rbs_allowed_slice\l+ max_rbs_allowed_slice\l_uplink\land 76 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__sched__ctrl__t.html",tooltip="scheduling control information set through an API (not used)"];
+  Node10 -> Node15 [color="grey25",fontsize="10",style="solid",label=" +physicalConfigDedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node17 -> Node15 [color="grey25",fontsize="10",style="solid",label=" +UE_sched_ctrl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node17 [label="{UE_sched_ctrl\n|+ ul_bandwidth\l+ dl_bandwidth\l+ min_ul_bandwidth\l+ min_dl_bandwidth\l+ ue_AggregatedMaximumBitrateDL\l+ ue_AggregatedMaximumBitrateUL\l+ cqiSchedInterval\l+ mac_ContentionResolution\lTimer\l+ max_allowed_rbs\l+ max_mcs\land 46 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__sched__ctrl.html",tooltip="scheduling control information set through an API (not used)"];
+  Node18 -> Node15 [color="grey25",fontsize="10",style="solid",label=" +UE_template" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node18 [label="{UE_TEMPLATE\n|+ rnti\l+ oldNDI\l+ oldmcs1\l+ oldmcs2\l+ oldNDI_UL\l+ mcs_UL\l+ TBS_UL\l+ oldCQI_UL\l+ oldTPC_UL\l+ ul_active\land 46 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__TEMPLATE.html",tooltip="eNB template for UE context information"];
+  Node10 -> Node18 [color="grey25",fontsize="10",style="solid",label=" +physicalConfigDedicated" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node19 -> Node15 [color="grey25",fontsize="10",style="solid",label=" +eNB_UE_stats" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node19 [label="{eNB_UE_STATS\n|+ crnti\l+ rrc_status\l+ harq_pid\l+ harq_round\l+ rbs_used\l+ rbs_used_retx\l+ ncce_used\l+ ncce_used_retx\l+ dlsch_mcs1\l+ dlsch_mcs2\land 48 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__UE__STATS.html",tooltip="eNB statistics for the connected UEs"];
+  Node20 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +if_inst" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node20 [label="{IF_Module_s\n|+ UL_indication\l+ schedule_response\l+ PHY_config_req\l+ CC_mask\l+ current_frame\l+ current_subframe\l+ if_mutex\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structIF__Module__s.html",tooltip=" "];
+}

@@ -1,0 +1,18 @@
+digraph "rrc_eNB_generate_RRCConnectionSetup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rrc_eNB_generate_RRCConnection\lSetup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Generate the RRCConnectionSetup based on information coming from RRM."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="do_RRCConnectionSetup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$asn1__msg_8c.html#a3b4ae9cccb46b14b3c4f8bbaa14df079",tooltip="Generate an RRCConnectionSetup DL-CCCH-Message (eNB). This routine configures SRB_ToAddMod (SRB1/SRB2..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="do_RRCConnectionSetup_BR",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$asn1__msg_8c.html#a4b0badf47fc5561f8c894557f51081ae",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="xer_sprint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$asn1__msg_8c.html#a7706b60a01604dc40a4da50a2b105fcf",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rrc_eNB_get_next_transaction\l_identifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga11196274fe93b427294f44875f4018f9",tooltip="Function to get the next transaction identifier."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rrc_mac_config_req_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga5055ec5da054819bc0c7556b3d687f9d",tooltip="RRC eNB Configuration primitive for PHY/MAC. Allows configuration of PHY/MAC resources based on Syste..."];
+}

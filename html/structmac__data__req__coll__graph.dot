@@ -1,0 +1,12 @@
+digraph "mac_data_req"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{mac_data_req\n|+ buffer_occupancy_in\l_bytes\l+ buffer_occupancy_in_pdus\l+ ue_id_type_indicator\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="MAC-DATA-Req primitive is used to request that an upper layer PDU be sent using the procedures for th..."];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +data" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{list_t\n|+ nb_elements\l+ name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structlist__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +head\n+tail" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +rlc_info" ,arrowhead="odiamond",fontname="Helvetica"];
+}

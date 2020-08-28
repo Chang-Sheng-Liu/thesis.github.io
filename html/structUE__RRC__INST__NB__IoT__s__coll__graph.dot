@@ -1,0 +1,13 @@
+digraph "UE_RRC_INST_NB_IoT_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_RRC_INST_NB_IoT_s\n|+ RrcState\l+ RrcSubState\l+ rat\l+ UECapability\l+ UECapability_size\l+ Info\l+ sib2\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +plmnID" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{plmn_t\n|+ MCCdigit2\l+ MCCdigit1\l+ MNCdigit3\l+ MCCdigit3\l+ MNCdigit2\l+ MNCdigit1\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structplmn__t.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UECap" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{OAI_UECapability_NB\l_IoT_s\n|+ sdu\l+ sdu_size\l+ UE_Capability_NB_IoT\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structOAI__UECapability__NB__IoT__s.html",tooltip=" "];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +HandoverInfoUe\n+QuantityConfig\n+Srb0\n+Srb1\n+Srb2\n+initialNasMsg" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

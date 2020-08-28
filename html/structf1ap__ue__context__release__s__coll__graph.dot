@@ -1,0 +1,7 @@
+digraph "f1ap_ue_context_release_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{f1ap_ue_context_release_s\n|+ rnti\l+ cause\l+ cause_value\l+ rrc_container\l+ rrc_container_length\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

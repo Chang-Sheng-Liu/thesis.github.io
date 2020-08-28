@@ -1,0 +1,7 @@
+digraph "MACPHY_DATA_REQ_TX"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MACPHY_DATA_REQ_TX\n|+ num_tb\l+ tb_size_bytes\l+ Active_process_map\l+ New_process_map\l+ Chbch_pdu\l+ DL_sach_pdu\l+ UL_sach_pdu\l+ Rach_pdu\l+ Mrbch_pdu\l+ Pdu\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="MACPHY-DATA-REQ_TX structure is used to transfer a new PDU to PHY corresponding to a particular trans..."];
+}

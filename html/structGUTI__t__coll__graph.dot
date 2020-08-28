@@ -1,0 +1,11 @@
+digraph "GUTI_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GUTI_t\n|+ m_tmsi\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +gummei" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{gummei_t\n|+ MMEgid\l+ MMEcode\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structgummei__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +plmn" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{plmn_t\n|+ MCCdigit2\l+ MCCdigit1\l+ MNCdigit3\l+ MCCdigit3\l+ MNCdigit2\l+ MNCdigit1\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structplmn__t.html",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "srb1_params_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{srb1_params_s\n|+ srb1_timer_poll_retransmit\l+ srb1_timer_reordering\l+ srb1_timer_status_prohibit\l+ srb1_poll_pdu\l+ srb1_poll_byte\l+ srb1_max_retx_threshold\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

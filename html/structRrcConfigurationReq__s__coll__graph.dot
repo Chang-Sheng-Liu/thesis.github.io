@@ -1,0 +1,9 @@
+digraph "RrcConfigurationReq_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{RrcConfigurationReq_s\n|+ cell_identity\l+ tac\l+ mcc\l+ mnc\l+ mnc_digit_length\l+ num_plmn\l+ enable_measurement\l_reports\l+ enable_x2\l+ rrc_inactivity_timer\l_thres\l+ default_drx\land 124 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +radioresourceconfig\n+radioresourceconfig_BR" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+}

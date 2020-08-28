@@ -1,0 +1,54 @@
+digraph "flexran_create_config_structures"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="flexran_create_config\l_structures",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="flexran_agent_create\l_slice_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__mac__internal_8c.html#a1bc54021d04bab2a3b4e6720d20d26b7",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="flexran_agent_read\l_slice_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__mac__internal_8c.html#a9fb0d92225e3ee54fd4e76e912367148",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="flexran_get_interslice\l_sharing_active",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ae89268642d7fcc5907fa771b2fb0e8ad",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="flexran_get_intraslice\l_sharing_active",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#abeb11c02e6d53a9993f2ba4f4a3baf88",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="flexran_agent_read\l_slice_dl_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__mac__internal_8c.html#a88e682ddafd4a23f7fb981dbb7d45ad0",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="flexran_get_dl_slice\l_accounting_policy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a39d80fb8256bc0b6062a7176627a489c",tooltip=" "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="flexran_get_dl_slice_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a079e16a3540c8441a70f131197164598",tooltip=" "];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="flexran_get_dl_slice\l_isolation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a02770956dcaa2614103f1e9caf8c8d17",tooltip=" "];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="flexran_get_dl_slice\l_maxmcs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a1d1ccfd239eb240a8c325261de76f0eb",tooltip=" "];
+  Node6 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="flexran_get_dl_slice\l_percentage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ae2861a90d5f6b385cffbe48c6f71be6a",tooltip=" "];
+  Node6 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="flexran_get_dl_slice\l_position_high",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a5e5ef0eaaaf06ccbeb1e647bdadec92c",tooltip=" "];
+  Node6 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="flexran_get_dl_slice\l_position_low",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a14e9cecd37da029b8a8a2247ca0b0171",tooltip=" "];
+  Node6 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="flexran_get_dl_slice\l_priority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ab3afceb57743253292f08044e4ab03cc",tooltip=" "];
+  Node6 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="flexran_get_dl_slice\l_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a343ff29ea2d3390931883c3b8d3aec4d",tooltip=" "];
+  Node6 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="flexran_get_dl_slice\l_sorting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a90a0f1774329c50928f5b5796002d41a",tooltip=" "];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="flexran_agent_read\l_slice_ul_config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__mac__internal_8c.html#a48e45f209ddacdd26edad3502a3aa254",tooltip=" "];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="flexran_get_ul_slice\l_first_rb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ac6620d8100ab9923d649561f8967ddcc",tooltip=" "];
+  Node17 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="flexran_get_ul_slice_id",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a0c9070c5352d07d1d5bfdd06ccf40cd5",tooltip=" "];
+  Node17 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="flexran_get_ul_slice\l_maxmcs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#aab514a73fcacd916e40284312ca4a6f1",tooltip=" "];
+  Node17 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="flexran_get_ul_slice\l_percentage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a93e49fa21ee44ed0cd44968730bf2f41",tooltip=" "];
+  Node17 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="flexran_get_ul_slice\l_scheduler",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#a38e4adfc3dc68fdcc03931147f8ac4e8",tooltip=" "];
+  Node1 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="flexran_get_num_dl\l_slices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#ad0b02bf84de3d5240cfe5510d5a48f41",tooltip=" "];
+  Node1 -> Node24 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="flexran_get_num_ul\l_slices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$flexran__agent__ran__api_8c.html#aeae41f5e824f612b8eabb7f487ec28c3",tooltip=" "];
+}

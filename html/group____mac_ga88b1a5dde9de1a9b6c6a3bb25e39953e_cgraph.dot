@@ -1,0 +1,58 @@
+digraph "l2_init_ue"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="l2_init_ue",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mac_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#acf142893afbda829d1b71631790e129c",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="openair_rrc_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#a59671b160847e2e15710870123ba2be8",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_init_mac",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabdd32b2e7149305840a1af51bf155c50",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_db_dl_PathlossChange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga764993404bc016bcd9dfebdd10aaaa14",tooltip="get the db form the path loss change configured by the higher layer"];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="get_sf_perioidicPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gad66af9ea051d9714c152c74168103142",tooltip="get the number of subframe form the periodic PHR timer configured by the higher layer"];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="get_sf_prohibitPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga933ccf9b77944c58de0bfea4db388d95",tooltip="get the number of subframe form the prohibit PHR duration configured by the higher layer"];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="uniform_rngen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga16686da47f6f375ecce38c22fa05ded7",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rlcmac_init_global\l_param_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#a0da856384bb6fe02b877c5535073e721",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="pdcp_layer_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#gad431a3d18b406f505fb1ae91213c62d1",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="list_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a896782f4f794d085242b80e09bbc91dd",tooltip=" "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="pdcp_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp_8c.html#a4a5257502aad38255aa34acf9216af8f",tooltip=" "];
+  Node9 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="rlc_module_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga8a21a99b77bae78c21114212ee98f69f",tooltip="RAZ the memory of the RLC layer, initialize the memory pool manager (mem_block_t structures mainly us..."];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="pool_buffer_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#ad3a69d5a7ed32f575ea6c61d27cf0e3b",tooltip=" "];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rb_free_rlc_union",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga833d703a0ba5dc802af8c38342a5a41c",tooltip="Free the rlc memory contained in the RLC embedded in the rlc_union_t struct pointed by of the rlcu_pP..."];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="rlc_am_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaee23da96f55d01cf9235fd51a77dd6f3",tooltip="Free all memory resources allocated and kept by this RLC AM instance."];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node16 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="list2_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8h.html#a4dfb5dc05ac6b1b619145632d4d181cf",tooltip=" "];
+  Node18 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="list2_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list2_8c.html#adfe158be4998f339a88ed851bb6abc26",tooltip=" "];
+  Node16 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="list_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a73dcb25a7e97fea269a73f9179670ccf",tooltip=" "];
+  Node20 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+  Node15 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="rlc_tm_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gae5a8a651337cf3b3837af170d19dc7f4",tooltip="Free all allocated memory (lists and buffers) previously allocated by this RLC TM instance."];
+  Node22 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node23 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="rlc_um_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga5379c33a0df605345b70616b41b6ab68",tooltip="Free all allocated memory (lists and buffers) previously allocated by this RLC UM instance."];
+  Node23 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

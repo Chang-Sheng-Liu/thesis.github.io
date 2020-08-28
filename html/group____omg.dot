@@ -1,0 +1,13 @@
+digraph "OpenAir Mobility Generation (OMG)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node4 [label="Mobility Models in\l OpenAir",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mob__models__in__openair.html",tooltip=" "];
+  Node3 [label="Random Mobility Models\l: Brief Overview",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mob__models.html",tooltip=" "];
+  Node1 [label="OpenAir Mobility Generation\l (OMG)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="\>mac_rlc_primitives\l\</em\> MAC Layer Primitives\l for Communications with RLC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html",tooltip=" "];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+}

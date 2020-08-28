@@ -1,0 +1,18 @@
+digraph "SCHEDULE_NB_IoT_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SCHEDULE_NB_IoT_t\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UL_resource" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{Available_available\l_resource_DL\n|+ sixtone_end_subframe\l+ threetone_end_subframe\l+ singletone1_end_subframe\l+ singletone2_end_subframe\l+ singletone3_end_subframe\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structAvailable__available__resource__DL.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +singletone1_Head\n+singletone2_Head\n+singletone3_Head\n+sixtone_Head\n+threetone_Head" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{available_resource_UL_s\n|+ start_subframe\l+ end_subframe\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structavailable__resource__UL__s.html",tooltip=" "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +next\n+prev" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{struct\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structstruct.html",tooltip="holds vehicle id and initial pointer to the head of the linked list in hastable"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +scheduling_flag" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{scheduling_flag_t\n|+ flag_MIB\l+ flag_SIB1\l+ flag_SIBs\l+ flag_type2_css\l+ flag_type1_css\l+ flag_uss\l+ flag_fix_scheduling\l+ num_type2_css_run\l+ num_type1_css_run\l+ num_uss_run\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structscheduling__flag__t.html",tooltip=" "];
+  Node6 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +schedule_result_list\l_DL\n+schedule_result\l_list_UL" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node6 [label="{schedule_result\n|+ output_subframe\l+ sdu_length\l+ DLSCH_pdu\l+ direction\l+ DCI_pdu\l+ DCI_release\l+ channel\l+ rnti\l+ rnti_type\l+ npusch_format\l+ R_harq\l+ end_subframe\l+ rar_buffer\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structschedule__result.html",tooltip=" "];
+  Node4 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +next" ,arrowhead="odiamond",fontname="Helvetica"];
+}

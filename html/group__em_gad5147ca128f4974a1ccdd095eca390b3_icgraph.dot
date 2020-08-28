@@ -1,0 +1,18 @@
+digraph "nas_COMMON_add_rb"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="nas_COMMON_add_rb",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Add a radio-bearer descriptor."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nas_mesh_DC_decode\l_rb_establish_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mesh_8c.html#aae85cc0b9c381387c426d94acbff4089",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nas_mesh_DC_receive",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gacd3653f415af7365f486f78adc14b969",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="nas_set_msg_rb_establishment\l_reply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2ioctl_8c.html#ac10a697d8780dd18ba51fa8db5eac84f",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="nas_ioCTL_rb_establishment\l_request",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$MESH_2ioctl_8c.html#a45c32eced5959277d11d19fde0025ac9",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="nas_CTL_ioctl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga4c36ff3b81cf9bfbee52d78798c1dd9f",tooltip=" "];
+}

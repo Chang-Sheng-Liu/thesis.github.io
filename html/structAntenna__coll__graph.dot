@@ -1,0 +1,11 @@
+digraph "Antenna"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Antenna\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +eNB_antenna" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{eNB_Antenna\n|+ number_of_sectors\l+ beam_width_dB\l+ alpha_rad\l+ antenna_gain_dBi\l+ tx_power_dBm\l+ rx_noise_level_dB\l+ antenna_orientation\l_degree\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structeNB__Antenna.html",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +UE_antenna" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{UE_Antenna\n|+ antenna_gain_dBi\l+ tx_power_dBm\l+ rx_noise_level_dB\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structUE__Antenna.html",tooltip=" "];
+}

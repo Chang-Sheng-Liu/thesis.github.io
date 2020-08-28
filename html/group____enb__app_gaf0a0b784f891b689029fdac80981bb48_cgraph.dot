@@ -1,0 +1,14 @@
+digraph "RCconfig_L1"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="RCconfig_L1",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="configure_nfapi_pnf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8c.html#a8efa96c6ac7c3f4021df0182b46ec095",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="l1_north_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8c.html#a118d7493b79eca11eadef96fa7d10eaa",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mac_top_init_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$config_8c.html#a7b366a80fdb7f92ef5b4418560f2c330",tooltip=" "];
+}

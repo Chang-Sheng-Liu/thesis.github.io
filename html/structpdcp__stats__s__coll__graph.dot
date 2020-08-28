@@ -1,0 +1,7 @@
+digraph "pdcp_stats_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pdcp_stats_s\n|+ pdcp_run\l+ data_req\l+ data_ind\l+ apply_security\l+ validate_security\l+ pdcp_ip\l+ ip_pdcp\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,57 @@
+digraph "ue_init_mac"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="ue_init_mac",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="mac_top_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main__ue_8c.html#acf142893afbda829d1b71631790e129c",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="l2_init_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga88b1a5dde9de1a9b6c6a3bb25e39953e",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="ue_mac_reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga968bf9010590de196f107a6c6f8ed528",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rrc_mac_config_req_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gafe15012710aa9742582216918ff0f028",tooltip="RRC eNB Configuration primitive for PHY/MAC. Allows configuration of PHY/MAC resources based on Syste..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rrc_control_socket\l_thread_fct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#gad66437282aad2439e38073002a653c65",tooltip="Process request from control socket."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="rrc_control_socket_init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga7af004263ecb2003fbe5aa42f91f82d2",tooltip="Init control socket to listen to incoming packets from ProSe App."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rrc_ue_process_measConfig",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga999d668c95a4d7f8a43f2b0abfd3428a",tooltip="Process a measConfig Message and configure PHY/MAC."];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rrc_ue_process_rrcConnection\lReconfiguration",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga69b91ce240794d9ff2ea05e081a0cb71",tooltip="process the received rrcConnectionReconfiguration message at UE"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="rrc_ue_decode_dcch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga6dfdf38f6361516a60dc42aaf3090e05",tooltip="Decodes a DL-DCCH message and invokes appropriate routine to handle the message."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="rrc_data_ind_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$L2__interface__ue_8c.html#a44b28f0e3904bcda3c99685a2d9a4e0e",tooltip=" "];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="rrc_ue_task",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga0c758807c5db924014c340730b210f28",tooltip="RRC UE task."];
+  Node5 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="rrc_ue_process_mobilityControlInfo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga0d6ee5967ee0dbddb40ec83052365f16",tooltip="Process MobilityControlInfo Message to proceed with handover and configure PHY/MAC."];
+  Node13 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="rrc_ue_process_radioResource\lConfigDedicated",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga4a34b91b0d2ce41ace5eec79170facd8",tooltip="Process a RadioResourceConfigDedicated Message and configure PHY/MAC."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="rrc_ue_decode_ccch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#gafeede0bc08155a888fc2c8f1d113a80d",tooltip="Decodes DL-CCCH message and invokes appropriate routine to handle the message."];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="mac_rrc_data_ind_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga81d228980a27c3379568d77e89865d35",tooltip=" "];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="ue_decode_p",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gacb9383b30cfa1e89eb884c71184c38f5",tooltip=" "];
+  Node17 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="dl_config_req_UE_MAC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$phy__stub__UE_8h.html#a72d909a6a600ac50080469c6b113d330",tooltip=" "];
+  Node16 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="ue_decode_si",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga24e4a25ebe83757ad951d227d8a66380",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="ue_decode_si_mbms",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gac7dc4f7d76939d70d87665cb72de2b0a",tooltip=" "];
+  Node16 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="ue_send_mch_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga1a523251e23101d551f32120b59821d6",tooltip=" "];
+  Node16 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="ue_send_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga0e048d86d492024a8081694c4db1b205",tooltip=" "];
+  Node22 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="ue_send_sl_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga772d4b4e4d68df2cb7b07293bc786673",tooltip=" "];
+  Node15 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

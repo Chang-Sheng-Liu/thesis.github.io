@@ -1,0 +1,14 @@
+digraph "rrc_eNB_handover_ue_context_release"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rrc_eNB_handover_ue\l_context_release",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rrc_eNB_S1AP_get_ue_ids",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__S1AP_8c.html#a4f7cd1f2123990a64d00dddc6ce83906",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rrc_eNB_S1AP_remove\l_ue_ids",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__S1AP_8c.html#a20d58c5bb2a687953807afed8d1f1c7d",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="s1ap_ue_context_release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__eNB__S1AP_8c.html#a6541ccdb3daa815dab5aca091fca63da",tooltip=" "];
+}

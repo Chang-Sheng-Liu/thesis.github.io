@@ -1,0 +1,26 @@
+digraph "rlc_tm_mac_data_indication"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rlc_tm_mac_data_indication",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Receive PDUs from lower layer MAC."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_tm_rx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaf13c04f2ce26805cbfda3137cee4d93a",tooltip="Process the received PDUs from lower layer."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="rlc_tm_send_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga3309275e9d93084755bea384bd431aa4",tooltip="Send SDU if any reassemblied to upper layer."];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="get_free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aa6649c5f31ce28f70a1a7352eb41de46",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="display_mem_load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aad2e600dac4df19ae63b1efe29405f59",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rlc_data_ind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gabba9d9796c03b8f01c944be71725feff",tooltip="Interface with higher layers, route SDUs coming from RLC protocol instances to upper layer instance."];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="get_pdcp_data_ind_func",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#ga2e06db776bf03678ebd05189a1635ee3",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="rlc_util_print_hex\l_octets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga9080083e27a8fc3d61451b6d4d7c8f3b",tooltip=" "];
+}

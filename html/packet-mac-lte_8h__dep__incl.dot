@@ -1,0 +1,41 @@
+digraph "UTIL/OPT/packet-mac-lte.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="UTIL/OPT/packet-mac\l-lte.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="UTIL/OPT/opt.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$opt_8h.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="LAYER2/MAC/eNB_scheduler.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler_8c.html",tooltip="eNB scheduler top level function operates on per subframe basis"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="LAYER2/MAC/eNB_scheduler\l_bch.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__bch_8c.html",tooltip="procedures related to eNB for the BCH transport channel"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="LAYER2/MAC/eNB_scheduler\l_dlsch.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__dlsch_8c.html",tooltip="procedures related to eNB for the DLSCH transport channel"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LAYER2/MAC/eNB_scheduler\l_fairRR.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__fairRR_8c.html",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="LAYER2/MAC/eNB_scheduler\l_mch.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__mch_8c.html",tooltip="procedures related to eNB for the MCH transport channel"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="LAYER2/MAC/eNB_scheduler\l_phytest.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__phytest_8c.html",tooltip=" "];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="LAYER2/MAC/eNB_scheduler\l_primitives.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__primitives_8c.html",tooltip="primitives used by eNB for BCH, RACH, ULSCH, DLSCH scheduling"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="LAYER2/MAC/eNB_scheduler_RA.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__RA_8c.html",tooltip="primitives used for random access"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="LAYER2/MAC/eNB_scheduler\l_ulsch.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$eNB__scheduler__ulsch_8c.html",tooltip="eNB procedures for the ULSCH transport channel"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="LAYER2/MAC/pre_processor.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pre__processor_8c.html",tooltip="eNB scheduler preprocessing fuction prior to scheduling"];
+  Node2 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="LAYER2/MAC/ra_procedures.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ra__procedures_8c.html",tooltip="Routines for UE MAC-layer Random-access procedures (36.321) V8.6 2009-03."];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="LAYER2/MAC/rar_tools.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rar__tools_8c.html",tooltip="random access tools"];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="LAYER2/MAC/rar_tools_ue.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rar__tools__ue_8c.html",tooltip=" "];
+  Node2 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="LAYER2/MAC/ue_procedures.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ue__procedures_8c.html",tooltip=" "];
+  Node2 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="UTIL/OCG/OCG_parse\l_XML.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$OCG__parse__XML_8c.html",tooltip="Parse the content of the XML configuration file."];
+  Node2 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="UTIL/OPT/probe.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$probe_8c.html",tooltip=" "];
+}

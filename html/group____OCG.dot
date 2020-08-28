@@ -1,0 +1,15 @@
+digraph "OpenAir Config Generation (OCG)"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=box];
+  rankdir=LR;
+  Node3 [label="OAI protocol config",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____OSD__basic.html",tooltip="OAI Emulation struct for protocol configuration."];
+  Node4 [label="OCG Module State Indicators",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____oks.html",tooltip="Indicate whether a module has processed successfully."];
+  Node1 [label="OpenAir Config Generation\l (OCG)",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 [label="Macro Definition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____useful__macro.html",tooltip="the following macros will be used in the code of OCG"];
+  Node5 [label="Main Variables",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____main__val.html",tooltip="Variables used by the main function."];
+  Node1->Node2 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node3 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node4 [shape=plaintext, dir="back", style="solid"];
+  Node1->Node5 [shape=plaintext, dir="back", style="solid"];
+}

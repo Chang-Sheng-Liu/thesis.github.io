@@ -1,0 +1,7 @@
+digraph "HANDOVER_INFO_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{HANDOVER_INFO_s\n|+ ho_prepare\l+ ho_complete\l+ state\l+ modid_s\l+ modid_t\l+ assoc_id\l+ ueid_s\l+ ueid_t\l+ as_config\l+ as_context\land 6 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

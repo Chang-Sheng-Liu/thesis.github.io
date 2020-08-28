@@ -1,0 +1,7 @@
+digraph "UE_sched_ctrl_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UE_sched_ctrl_t\n|+ ul_bandwidth\l+ dl_bandwidth\l+ min_ul_bandwidth\l+ min_dl_bandwidth\l+ ue_AggregatedMaximumBitrateDL\l+ ue_AggregatedMaximumBitrateUL\l+ cqiSchedInterval\l+ mac_ContentionResolution\lTimer\l+ max_rbs_allowed_slice\l+ max_rbs_allowed_slice\l_uplink\land 76 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="scheduling control information set through an API (not used)"];
+}

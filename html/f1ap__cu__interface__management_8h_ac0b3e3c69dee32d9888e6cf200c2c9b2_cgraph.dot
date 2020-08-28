@@ -1,0 +1,16 @@
+digraph "CU_send_gNB_CU_CONFIGURATION_UPDATE"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CU_send_gNB_CU_CONFIGURATION\l_UPDATE",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="cu_f1ap_itti_send_sctp\l_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__itti__messaging_8c.html#a6559593de05b58224e5177da44fc8de9",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="f1ap_encode_pdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__encoder_8c.html#aeb101e0107e90201d0a11b82b3fab4b9",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="length",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$UTIL_2OMG_2common_8c.html#a587e0ad0d0cc2677421231a08c3a614b",tooltip="Helper function to return the length of a string."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="F1AP_get_next_transaction\l_identifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__common_8c.html#ae3842d92538b1cbefb7c4fa162530283",tooltip=" "];
+}

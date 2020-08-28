@@ -1,0 +1,14 @@
+digraph "pdcp_calculate_max_seq_num_for_given_size"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="pdcp_calculate_max\l_seq_num_for_given_size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="pdcp_advance_rx_window",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__sequence__manager_8h.html#a8f17272420c07d5515921fb0516491d9",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="pdcp_get_next_tx_seq\l_number",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__sequence__manager_8h.html#af4ec9f6c935171b632afb72e13f1d3d1",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pdcp_is_seq_num_valid",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__sequence__manager_8h.html#a62ef24b021795d75c61ccdcd8ba42887",tooltip=" "];
+}

@@ -1,0 +1,7 @@
+digraph "stats_updates_context_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{stats_updates_context_t\n|+ is_initialized\l+ cont_update\l+ xid\l+ stats_req\l+ prev_stats_reply\l+ mutex\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

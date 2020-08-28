@@ -1,0 +1,7 @@
+digraph "pdcp_s"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pdcp_s\n|+ header_compression\l_profile\l+ is_ue\l+ is_srb\l+ cipheringAlgorithm\l+ integrityProtAlgorithm\l+ kUPenc\l+ kRRCint\l+ kRRCenc\l+ security_activated\l+ rlc_mode\land 12 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

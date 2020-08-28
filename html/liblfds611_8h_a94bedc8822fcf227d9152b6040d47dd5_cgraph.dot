@@ -1,0 +1,14 @@
+digraph "lfds611_ringbuffer_get_write_element"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="lfds611_ringbuffer\l_get_write_element",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds611_freelist_pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a553d79ea0648f758e195ff7765656c93",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="lfds611_ringbuffer\l_get_read_element",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__ringbuffer__get__and__put_8c.html#a598a3b777029aa65dbc63ce0388be887",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="lfds611_queue_dequeue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$liblfds611_8h.html#a53e4f247849f5651975a2a6ed937cf53",tooltip=" "];
+}

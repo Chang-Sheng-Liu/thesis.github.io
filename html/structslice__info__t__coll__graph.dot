@@ -1,0 +1,16 @@
+digraph "slice_info_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{slice_info_t\n|+ intraslice_share_active\l+ interslice_share_active\l+ n_dl\l+ n_ul\l+ rballoc_sub\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +ul" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{slice_sched_conf_ul_t\n|+ id\l+ pct\l+ maxmcs\l+ sorting\l+ first_rb\l+ sched_name\l+ prio\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structslice__sched__conf__ul__t.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +sched_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node3 [label="{frame\n|+ duration\l+ da\l+ sa\l+ body\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structframe.html",tooltip="the frame structure is ..."];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +dl" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node4 [label="{slice_sched_conf_dl_t\n|+ id\l+ pct\l+ isol\l+ prio\l+ pos_low\l+ pos_high\l+ maxmcs\l+ sorting\l+ accounting\l+ sched_name\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structslice__sched__conf__dl__t.html",tooltip=" "];
+  Node3 -> Node4 [color="grey25",fontsize="10",style="solid",label=" +sched_cb" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pre_processor_results" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node5 [label="{pre_processor_results_t\n|+ nb_rbs_required\l+ nb_rbs_accounted\l+ nb_rbs_remaining\l+ slice_allocation_mask\l+ MIMO_mode_indicator\l+ bytes_lcid\l+ wb_pmi\l+ mcs\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structpre__processor__results__t.html",tooltip="Structure for saving the output of each pre_processor instance."];
+}

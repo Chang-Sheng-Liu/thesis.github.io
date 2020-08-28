@@ -1,0 +1,10 @@
+digraph "lfds611_queue_internal_guaranteed_new_element_from_freelist"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="lfds611_queue_internal\l_guaranteed_new_element\l_from_freelist",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="lfds611_queue_guaranteed\l_enqueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lfds611__queue__queue_8c.html#abae2d00c8f5c1b90a48df150b6560ec1",tooltip=" "];
+}

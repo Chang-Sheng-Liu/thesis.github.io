@@ -1,0 +1,7 @@
+digraph "UL_IND_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{UL_IND_t\n|+ module_id\l+ CC_id\l+ frame\l+ subframe\l+ harq_ind\l+ crc_ind\l+ sr_ind\l+ cqi_ind\l+ rach_ind\l+ rach_ind_br\l+ srs_ind\l+ rx_ind\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

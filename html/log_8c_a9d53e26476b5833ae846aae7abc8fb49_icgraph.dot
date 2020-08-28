@@ -1,0 +1,10 @@
+digraph "logRecord_thread_safe"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="logRecord_thread_safe",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="log_thread_function",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$log_8c.html#a6e29b3f967c30b0ea10664d8d7e7c794",tooltip=" "];
+}

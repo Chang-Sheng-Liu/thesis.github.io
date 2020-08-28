@@ -1,0 +1,27 @@
+digraph "rrc_ue_process_measConfig"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rrc_ue_process_measConfig",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Process a measConfig Message and configure PHY/MAC."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rrc_mac_config_req_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gafe15012710aa9742582216918ff0f028",tooltip="RRC eNB Configuration primitive for PHY/MAC. Allows configuration of PHY/MAC resources based on Syste..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="get_db_dl_PathlossChange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga764993404bc016bcd9dfebdd10aaaa14",tooltip="get the db form the path loss change configured by the higher layer"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="get_sf_perioidicPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gad66af9ea051d9714c152c74168103142",tooltip="get the number of subframe form the periodic PHR timer configured by the higher layer"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_sf_prohibitPHR\l_Timer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga933ccf9b77944c58de0bfea4db388d95",tooltip="get the number of subframe form the prohibit PHR duration configured by the higher layer"];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="ue_mac_reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga968bf9010590de196f107a6c6f8ed528",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="phy_reset_ue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$config__ue_8c.html#a0fef1b3a3eb7a3467718f501d2371ea3",tooltip=" "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ue_init_mac",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabdd32b2e7149305840a1af51bf155c50",tooltip=" "];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="uniform_rngen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga16686da47f6f375ecce38c22fa05ded7",tooltip=" "];
+}

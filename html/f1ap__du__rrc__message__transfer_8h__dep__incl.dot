@@ -1,0 +1,15 @@
+digraph "F1AP/f1ap_du_rrc_message_transfer.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="F1AP/f1ap_du_rrc_message\l_transfer.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="f1ap rrc message transfer for DU"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="F1AP/f1ap_du_rrc_message\l_transfer.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__rrc__message__transfer_8c.html",tooltip="f1ap rrc message transfer for DU"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="F1AP/f1ap_du_task.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__task_8c.html",tooltip="data structures for F1 interface modules"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="F1AP/f1ap_handlers.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__handlers_8c.html",tooltip="f1ap messages handlers"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="RRC/LTE/L2_interface.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$L2__interface_8c.html",tooltip=" "];
+}

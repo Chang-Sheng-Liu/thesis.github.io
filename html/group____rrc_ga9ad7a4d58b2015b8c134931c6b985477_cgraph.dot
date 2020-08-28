@@ -1,0 +1,48 @@
+digraph "rrc_eNB_generate_UECapabilityEnquiry"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rrc_eNB_generate_UECapability\lEnquiry",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="do_UECapabilityEnquiry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$asn1__msg_8c.html#aa49d6fc45b23706fea486a7c442f4d1e",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="rrc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga7a82225ee9edf7f022fcb9da999b3bf0",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pdcp_run",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#gaaf877f8fcf559b90eadcbcc2460ba0ef",tooltip="Runs PDCP entity to let it handle incoming/outgoing SDUs."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="pdcp_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#gad6d90c31375a53aa20d12f06bc620b85",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="get_free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aa6649c5f31ce28f70a1a7352eb41de46",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="display_mem_load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#aad2e600dac4df19ae63b1efe29405f59",tooltip=" "];
+  Node5 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rlc_util_print_hex\l_octets",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga9080083e27a8fc3d61451b6d4d7c8f3b",tooltip=" "];
+  Node4 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="pdcp_fifo_flush_sdus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#ga5b4f9ca27aa61b5c96d299de5733baac",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="debug_pdcp_pc5s_sdu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__fifo_8c.html#a97d2650f7432d3f25db23b499511518d",tooltip=" "];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="list_get_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a29a1d0ab77edd320e92d002fd66179a6",tooltip=" "];
+  Node9 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+  Node4 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="pdcp_fifo_read_input_sdus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____pdcp.html#gadf140ab34fd99a55b8b383fad506d841",tooltip=" "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="pdcp_fifo_read_input\l_sdus_fromnetlinksock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__fifo_8c.html#aa0db16d2f05195706a3466500b850656",tooltip=" "];
+  Node15 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="pdcp_fifo_read_input\l_sdus_frompc5s",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__fifo_8c.html#ae6e845526dd2e22802d6b7372116ccd9",tooltip=" "];
+  Node16 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="pdcp_fifo_read_input\l_sdus_fromtun",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp__fifo_8c.html#a2aa0e422b9283508cc5ace1f68ff2390",tooltip=" "];
+  Node17 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="pdcp_update_stats",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pdcp_8c.html#a785e8be4171fa72af80163e2fad642a6",tooltip=" "];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="rrc_eNB_get_next_transaction\l_identifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____rrc.html#ga11196274fe93b427294f44875f4018f9",tooltip="Function to get the next transaction identifier."];
+}

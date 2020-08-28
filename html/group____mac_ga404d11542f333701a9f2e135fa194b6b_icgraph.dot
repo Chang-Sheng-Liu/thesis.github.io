@@ -1,0 +1,22 @@
+digraph "UE_num_active_CC"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="UE_num_active_CC",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dlsch_scheduler_pre\l_processor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gabd5df338fec1a4a9267ab153e6b357fc",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="dlsch_scheduler_pre\l_processor_accounting",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga4642459b17f900b13cc8428fb388444b",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="dlsch_scheduler_pre\l_processor_intraslice\l_sharing",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga396eb2c6b3abeea03b592a8bbcacd62a",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="dlsch_scheduler_pre\l_processor_partitioning",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gaa33033ac203d4bb3ff99ea6112dc12b5",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="dlsch_scheduler_pre\l_processor_positioning",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#gab9e5177a5ba6e9f6927a1721c1ed8cb2",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

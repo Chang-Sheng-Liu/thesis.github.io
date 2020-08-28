@@ -1,0 +1,10 @@
+digraph "arfcn_to_freq"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="arfcn_to_freq",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="dump_sib5",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rrc__UE_8c.html#a19958bc7fe72735e2552fc496b0a36de",tooltip=" "];
+}

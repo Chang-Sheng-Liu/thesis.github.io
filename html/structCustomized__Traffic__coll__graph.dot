@@ -1,0 +1,7 @@
+digraph "Customized_Traffic"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Customized_Traffic\n|+ application_type\l+ source_id\l+ destination_id\l+ traffic\l+ transport_protocol\l+ ip_version\l+ background\l+ idt_dist\l+ idt_min_ms\l+ idt_max_ms\land 30 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

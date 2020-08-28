@@ -1,0 +1,18 @@
+digraph "rlc_data_req"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DU_handle_DL_RRC_MESSAGE\l_TRANSFER",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__rrc__message__transfer_8h.html#a7d9d236d7bd8cf93aae79bf45006cfee",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DU_handle_UE_CONTEXT\l_RELEASE_COMMAND",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$f1ap__du__ue__context__management_8h.html#ab84c4078987a6de0b9f32a831f58c38a",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="mpls_rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$rlc__mpls_8c.html#a1a75c93d5aa150219f8233dc2737fc39",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="proto_agent_pdcp_data\l_req_process",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$proto__agent__common_8h.html#a6ba8bf7d848e3b7c78b8b66f24584483",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rrc_rlc_data_req",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga1117edda95ead39b8540106508378016",tooltip="Function for RRC to send a SDU through a Signalling Radio Bearer."];
+}

@@ -1,0 +1,10 @@
+digraph "handle_rbg_position_for_resource_sharing"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="handle_rbg_position\l_for_resource_sharing",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="inter_slice_dl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group____mac.html#ga7ab2acef126a7e073a41b9be6f80ae1d",tooltip="這是本論文最重要的函式之一，負責處理downlink 的slice isolation和resource sharing 的運算處理。"];
+}

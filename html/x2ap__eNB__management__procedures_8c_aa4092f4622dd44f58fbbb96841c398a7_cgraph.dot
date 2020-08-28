@@ -1,0 +1,10 @@
+digraph "x2ap_dump_eNB_list"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="x2ap_dump_eNB_list",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="x2ap_dump_eNB",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$x2ap__eNB__management__procedures_8c.html#a0b7ba120244b40a14e60a17b38a284f2",tooltip="utility functions"];
+}

@@ -1,0 +1,9 @@
+digraph "pdcp_params_t"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{pdcp_params_t\n|+ optmask\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +pdcp_data_ind_func\n+send_rlc_data_req_func" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{protocol_ctxt_s\n|+ module_id\l+ enb_flag\l+ instance\l+ rnti\l+ frame\l+ subframe\l+ eNB_index\l+ configured\l+ brOption\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprotocol__ctxt__s.html",tooltip=" "];
+}

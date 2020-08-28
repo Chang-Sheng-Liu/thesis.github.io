@@ -1,0 +1,9 @@
+digraph "Info"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Info\n|+ output_path\l+ ocg_ok\l+ nb_ue_local\l+ nb_ue_remote\l+ nb_enb_local\l+ nb_enb_remote\l+ nb_ru_local\l+ nb_ru_remote\l+ nb_rn_local\l+ nb_rn_remote\land 65 more...\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +master" ,arrowhead="odiamond",fontname="Helvetica"];
+  Node2 [label="{master_info_t\n|+ nb_ue\l+ first_ue\l+ nb_enb\l+ first_enb\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structmaster__info__t.html",tooltip=" "];
+}

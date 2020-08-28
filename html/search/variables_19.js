@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['x_19077',['x',['../structGeo.html#aa9f198b54ea74301219dbfce3a88a3a5',1,'Geo']]],
+  ['x2_5fho_5fnet_5fcontrol_19078',['x2_ho_net_control',['../structeNB__RRC__INST__s.html#ad8214c548d6a709c4de9a4fa20314dba',1,'eNB_RRC_INST_s']]],
+  ['x2_5fid_19079',['x2_id',['../structx2ap__handover__req__s.html#aef6b88f1dbfb1b8dec83729815c6eba4',1,'x2ap_handover_req_s::x2_id()'],['../structHANDOVER__INFO__s.html#a0d708f4aa644d55f609e48b9bacfb719',1,'HANDOVER_INFO_s::x2_id()']]],
+  ['x2_5fid_5ftarget_19080',['x2_id_target',['../structx2ap__handover__req__ack__s.html#af7cce9a89ff606c501b064e1c98ede6a',1,'x2ap_handover_req_ack_s']]],
+  ['x2_5ftarget_5fenb_5fassociated_5fnb_19081',['x2_target_enb_associated_nb',['../structx2ap__eNB__instance__s.html#ae1a16900d7deb86b2abc68a1dad6c20b',1,'x2ap_eNB_instance_s']]],
+  ['x2_5ftarget_5fenb_5fnb_19082',['x2_target_enb_nb',['../structx2ap__eNB__instance__s.html#a7eba2323d572cb2037852e8263383652',1,'x2ap_eNB_instance_s']]],
+  ['x2_5ftarget_5fenb_5fpending_5fnb_19083',['x2_target_enb_pending_nb',['../structx2ap__eNB__instance__s.html#a3ae3daac560eb10c96963eafe3ebcb4d',1,'x2ap_eNB_instance_s']]],
+  ['x2ap_5fenb_5finstance_19084',['x2ap_eNB_instance',['../structx2ap__eNB__data__s.html#a76d12f57da173b0029c53d8c060f0a2a',1,'x2ap_eNB_data_s']]],
+  ['x2ap_5fenb_5finternal_5fdata_19085',['x2ap_eNB_internal_data',['../x2ap__eNB__management__procedures_8c.html#a668e3147cba222a2b9852e7049e88d10',1,'x2ap_eNB_management_procedures.c']]],
+  ['x2ap_5fmessages_5fcallback_19086',['x2ap_messages_callback',['../x2ap__eNB__handler_8c.html#a59d1432a72a318a2c0bc8e3956e2c504',1,'x2ap_eNB_handler.c']]],
+  ['x2u_5fteid_19087',['x2u_teid',['../structHANDOVER__INFO__s.html#a63392774b99ab9c005e06a35c9fa5320',1,'HANDOVER_INFO_s']]],
+  ['x_5farea_19088',['x_area',['../mywindow_8cpp.html#adcdd6e062f19c64e578fa972c3c6de64',1,'x_area():&#160;omv.cpp'],['../omv_8cpp.html#adcdd6e062f19c64e578fa972c3c6de64',1,'x_area():&#160;omv.cpp'],['../openglwidget_8cpp.html#adcdd6e062f19c64e578fa972c3c6de64',1,'x_area():&#160;omv.cpp']]],
+  ['x_5ffrom_19089',['x_from',['../structmobility__struct.html#a705b1a0a89b0d75ce8ecf09bf4908048',1,'mobility_struct']]],
+  ['x_5fm_19090',['x_m',['../group____log__gen.html#ga9a9124d661ac4336c3363ada7f52a2fd',1,'Area']]],
+  ['x_5fpos_19091',['x_pos',['../structnode__struct.html#ada3c1eeae1939459c08c3164bc41f21a',1,'node_struct::x_pos()'],['../structparsed__data.html#a3c328a0f096867aefbc92cfcdf9bc7d8',1,'parsed_data::x_pos()']]],
+  ['x_5fto_19092',['x_to',['../structmobility__struct.html#aff5f796483a851a65292b5ab7d0dcd55',1,'mobility_struct']]],
+  ['xbuffer_19093',['xbuffer',['../structoai__nw__drv__priv.html#a67881ba27120f63eaa658c73da2930d4',1,'oai_nw_drv_priv::xbuffer()'],['../structnas__priv.html#a7267a41a4d2d706eb9c26d9a1bd15f33',1,'nas_priv::xbuffer()'],['../structue__ip__priv__s.html#a52de91655b6c86c163c77c93700d0600',1,'ue_ip_priv_s::xbuffer()']]],
+  ['xid_19094',['xid',['../structmac__stats__updates__context__t.html#ad8705f3b9086d2a0d64a123cff687035',1,'mac_stats_updates_context_t::xid()'],['../structstats__updates__context__t.html#ab7634e4a7485a2df98035a80f703b1f7',1,'stats_updates_context_t::xid()'],['../structflexran__agent__timer__element__s.html#a55b3acde023f0d1edab8edaf7385b257',1,'flexran_agent_timer_element_s::xid()'],['../structe__rab__param__NB__IoT__s.html#ab4666cd5525b154e93b9acb2296ce4ec',1,'e_rab_param_NB_IoT_s::xid()'],['../structe__rab__param__s.html#a7d11ef4bf58266815e10c729ff7d3d37',1,'e_rab_param_s::xid()'],['../RRC_2LTE_2defs__NB__IoT_8h.html#a8b9f8d768eb58616d9a920bf0367a047',1,'xid():&#160;defs_NB_IoT.h'],['../rrc__defs_8h.html#a8b9f8d768eb58616d9a920bf0367a047',1,'xid():&#160;rrc_defs.h']]],
+  ['xloc_5fdiv_19095',['xloc_div',['../omg__vars_8h.html#a06270ed1e22e5ae2674f780629a7b46a',1,'omg_vars.h']]]
+];

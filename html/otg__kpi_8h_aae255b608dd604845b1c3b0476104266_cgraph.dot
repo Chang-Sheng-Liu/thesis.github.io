@@ -1,0 +1,21 @@
+digraph "kpi_gen"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="kpi_gen",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="average_pkt_jitter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__kpi_8c.html#a95ffa2ed24d0331b900f801ac9d73a91",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="map_int_to_str",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$log_8c.html#a6b6b936cdf1e4a84de9b5dc18c385fab",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="rx_goodput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__kpi_8c.html#aac1c5e49613d9e21b21aaf9b7eac082c",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="get_ctime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg_8c.html#a8c2e2f0cd54f87b658206df2be650016",tooltip="get the simulation time"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="rx_loss_rate_pkts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__kpi_8c.html#a5ff0214ac2096b556df51b4efd290e2a",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="tx_throughput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$otg__kpi_8c.html#a1c1473c19489a8283a94b01c37768fb6",tooltip="compute the transmitter throughput in bytes per seconds"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

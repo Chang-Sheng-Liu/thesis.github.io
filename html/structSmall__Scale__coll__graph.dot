@@ -1,0 +1,7 @@
+digraph "Small_Scale"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Small_Scale\n|+ selected_option\l+ SCM_A\l+ SCM_B\l+ SCM_C\l+ SCM_D\l+ rayleigh_8tap\l+ ricean_8tap\l+ EPA\l+ EVA\l+ ETU\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

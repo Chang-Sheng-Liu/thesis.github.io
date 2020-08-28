@@ -1,0 +1,30 @@
+digraph "rb_free_rlc_union"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="rb_free_rlc_union",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Free the rlc memory contained in the RLC embedded in the rlc_union_t struct pointed by of the rlcu_pP..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="rlc_am_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gaee23da96f55d01cf9235fd51a77dd6f3",tooltip="Free all memory resources allocated and kept by this RLC AM instance."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="free_mem_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mem__block_8c.html#a3465e37844438c1cc552c197a2cfbbfd",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="list2_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8h.html#a4dfb5dc05ac6b1b619145632d4d181cf",tooltip=" "];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="list2_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list2_8c.html#adfe158be4998f339a88ed851bb6abc26",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="list_free",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a73dcb25a7e97fea269a73f9179670ccf",tooltip=" "];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="list_remove_head",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$list_8c.html#a68bb206a4e50e2f9f27ca4c051a84dc5",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="rlc_tm_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#gae5a8a651337cf3b3837af170d19dc7f4",tooltip="Free all allocated memory (lists and buffers) previously allocated by this RLC TM instance."];
+  Node8 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="rlc_um_cleanup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$group__em.html#ga5379c33a0df605345b70616b41b6ab68",tooltip="Free all allocated memory (lists and buffers) previously allocated by this RLC UM instance."];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}
